@@ -5,7 +5,10 @@ export const GlobalStyle = createGlobalStyle`
 body {
     transition: all 0.5s ease;
     font-family: "Roboto", sans-serif;
-    background-color: tomato;
+    background-color: rgba(240, 240, 240, 1); 
+    background-image: url('BG.png');
+    background-size: cover;
+    background-repeat: no-repeat;
   }
   s * {
     box-sizing: border-box;

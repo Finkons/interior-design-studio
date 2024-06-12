@@ -5,7 +5,17 @@ function App() {
   return (
     <Suspense fallback={<p>...loading</p>}>
       <GlobalStyle />
-      <h1>Hello world</h1>
+      <h1
+        style={{
+          textAlign: "start",
+          marginTop: 32,
+          marginLeft: 40,
+          color: "white",
+          margin: 0,
+        }}
+      >
+        NUDE
+      </h1>
     </Suspense>
   );
 }
