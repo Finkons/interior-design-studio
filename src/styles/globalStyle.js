@@ -4,7 +4,7 @@ import mediaBp from "./breakpoints";
 export const GlobalStyle = createGlobalStyle`
 body {
     transition: all 0.5s ease;
-    font-family: "Roboto", sans-serif;
+    font-family: "Poppins", sans-serif;
     background-color: rgba(240, 240, 240, 1); 
     background-image: url('BG.png');
     background-size: cover;

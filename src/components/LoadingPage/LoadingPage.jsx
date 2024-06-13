@@ -5,6 +5,7 @@ import {
   Container,
   ProgressBar,
   ProgressBarContainer,
+  Logo,
 } from "./LoadingPage.styled";
 
 const LoadingPage = ({ onLoadingComplete }) => {
@@ -27,7 +28,8 @@ const LoadingPage = ({ onLoadingComplete }) => {
 
   return (
     <Container>
-      <Paragraph>Loading... {progress}%</Paragraph>
+      <Logo />
+      <Paragraph>{progress}%</Paragraph>
       <ProgressBarContainer>
         <ProgressBar progress={progress} />
       </ProgressBarContainer>
