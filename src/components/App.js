@@ -23,7 +23,7 @@ function App() {
   };
 
  return (
-    <main>
+    <>
       {loading ? (
         <LoadingPage onLoadingComplete={handleLoadingComplete} />
       ) : (
@@ -38,7 +38,7 @@ function App() {
           <Footer />
         </Suspense>
       )}
-    </main>
+    </>
   );
 }
 
