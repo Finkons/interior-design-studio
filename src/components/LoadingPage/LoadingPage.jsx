@@ -1,5 +1,11 @@
 import React from "react";
 import { useState, useEffect } from "react";
+import {
+  Paragraph,
+  Container,
+  ProgressBar,
+  ProgressBarContainer,
+} from "./LoadingPage.styled";
 
 const LoadingPage = ({ onLoadingComplete }) => {
   const [progress, setProgress] = useState(0);
@@ -20,9 +26,12 @@ const LoadingPage = ({ onLoadingComplete }) => {
   }, [onLoadingComplete]);
 
   return (
-    <div style={{ textAlign: "center", marginTop: "20%" }}>
-      <p>Loading... {progress}%</p>
-    </div>
+    <Container>
+      <Paragraph>Loading... {progress}%</Paragraph>
+      <ProgressBarContainer>
+        <ProgressBar progress={progress} />
+      </ProgressBarContainer>
+    </Container>
   );
 };
 

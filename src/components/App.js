@@ -17,12 +17,12 @@ export const scroll = new SmoothScroll('a[href*="#"]', {
 
 function App() {
   const [loading, setLoading] = useState(true);
-  
+
   const handleLoadingComplete = () => {
     setLoading(false);
   };
 
- return (
+  return (
     <>
       {loading ? (
         <LoadingPage onLoadingComplete={handleLoadingComplete} />
