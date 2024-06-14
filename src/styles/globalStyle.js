@@ -13,6 +13,16 @@ body {
   s * {
     box-sizing: border-box;
   }
+
+  h1,
+h2,
+h3,
+h4,
+p,
+li {
+  margin: 0;
+  padding: 0;
+}
   
   a {
     text-decoration: none;
