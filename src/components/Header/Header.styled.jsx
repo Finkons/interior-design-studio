@@ -32,6 +32,20 @@ export const StyledLink = styled(NavLink)`
     color: #e50185;
   }
 `;
+export const SLink = styled(Link)`
+  color: #fff;
+  cursor: pointer;
+  font-family: Poppins;
+  font-size: 20px;
+  font-style: normal;
+  font-weight: 700;
+  line-height: 150%; /* 30px */
+  text-transform: uppercase;
+
+  &.active {
+    color: #e50185;
+  }
+`;
 
 export const SocialWrap = styled.div`
   display: flex;
