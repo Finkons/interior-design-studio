@@ -17,7 +17,8 @@ export const TextBlock = styled.div`
 
 `;
 export const NumberBlock = styled.div`
-text-align: end;
+padding-left: calc(100% - 690px);
+width: 690px;
 
 `;
 export const CenterBlock = styled.div`
@@ -43,6 +44,10 @@ font-style: normal;
 font-weight: 400;
 line-height: 150%; /* 27px */
 text-transform: uppercase;
+
+text-align: start;
+margin-top: -28px;
+padding-left: 14px;
 `;
 export const GrayTitle = styled.p`
 font-size: 128px;
@@ -108,7 +113,7 @@ display: flex;
 justify-content: flex-end;
 `;
 export const Li = styled.li`
-margin-right: 108px;
+margin-right: 100px;
 &:last-child {
 margin-right: 0px;
 margin-left: 0px

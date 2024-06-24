@@ -21,9 +21,9 @@ const AboutUs = () => {
         <Title>Projects</Title>
       </CenterBlock>
       <FlexList>
-      <Li><GrayTitle>10</GrayTitle><Title>Years of work</Title></Li>
-      <Li><GrayTitle>50+</GrayTitle><Title>Contractors</Title></Li>
-      <Li><GrayTitle>11</GrayTitle><Title>Employees</Title></Li>
+        <Li><GrayTitle>10</GrayTitle><Title>Years of work</Title></Li>
+        <Li><GrayTitle>50+</GrayTitle><Title>Contractors</Title></Li>
+        <Li><GrayTitle>11</GrayTitle><Title>Employees</Title></Li>
       </FlexList>
     </NumberBlock>
   
