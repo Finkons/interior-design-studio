@@ -2,7 +2,12 @@ import { createGlobalStyle } from "styled-components";
 import mediaBp from "./breakpoints";
 
 export const GlobalStyle = createGlobalStyle`
+@font-face {
+    font-family: 'PhontPhreaksHandwriting';
+    src: url('/fonts/PhontPhreaks Handwriting.ttf') format('truetype');
+}
 body {
+ margin: 0;
     transition: all 0.5s ease;
     font-family: "Poppins", sans-serif;
     background-color: rgba(240, 240, 240, 1); 
@@ -62,4 +67,5 @@ li {
           max-width: 320px;
         }
       }
+     
 `;

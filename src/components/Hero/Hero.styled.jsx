@@ -1,9 +1,9 @@
 import styled from "styled-components";
 
 export const Container = styled.section`
-  height: 941px;
+  height: 801px;
   position: relative;
-  padding: 140px 0px 0px 0px;
+  padding: 140px 50px 0px 0px;
   overflow: hidden;
   div {
     padding: 0px 0px 0px 1170px;
@@ -13,7 +13,7 @@ export const Container = styled.section`
 export const TextBlack = styled.h2`
   margin-bottom: 66px;
   color: #292929;
-  font-family: "PhontPhreak's Handwriting";
+  font-family: "PhontPhreaksHandwriting";
   font-size: 150px;
   font-style: normal;
   font-weight: 400;
@@ -26,7 +26,7 @@ export const TextBlack = styled.h2`
 export const TextPink = styled.h2`
   margin-bottom: 135px;
   color: #e50185;
-  font-family: "PhontPhreak's Handwriting";
+  font-family: "PhontPhreaksHandwriting";
   font-size: 150px;
   font-style: normal;
   font-weight: 400;

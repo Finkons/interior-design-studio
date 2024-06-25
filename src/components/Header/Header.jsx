@@ -5,7 +5,7 @@ import {
   StyledNav,
   StyledLink,
   SocialWrap,
-  SocialLink
+  SocialLink,
 } from "./Header.styled";
 
 const Header = () => {

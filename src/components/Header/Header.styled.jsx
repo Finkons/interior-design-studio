@@ -5,23 +5,26 @@ export const Container = styled.header`
   height: 139px;
   display: flex;
   flex-direction: row;
-  justify-content: space-between;
-  padding: 25px 40px 50px 40px;
+  // justify-content: space-between;
+  padding: 25px 40px 0px 40px;
 `;
 
-export const LogoWrap = styled.div``;
+export const LogoWrap = styled.div`
+  margin-right: 184px;
+`;
 
 export const StyledNav = styled.nav`
   display: flex;
+  margin-right: 246px;
   flex-direction: row;
-  gap: 100px;
+  gap: 95px;
   padding: 8px 0px 0px 0px;
 `;
 
 export const StyledLink = styled(NavLink)`
   color: #fff;
   cursor: pointer;
-  font-family: Poppins;
+  font-family: "Poppins";
   font-size: 20px;
   font-style: normal;
   font-weight: 700;

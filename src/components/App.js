@@ -1,5 +1,6 @@
 import { Suspense, useState } from "react";
 import { GlobalStyle } from "../styles/globalStyle";
+import { useEffect } from "react";
 import Header from "./Header";
 import Hero from "./Hero";
 import AboutUs from "./AboutUs";
@@ -10,13 +11,17 @@ import Footer from "./Footer";
 import LoadingPage from "./LoadingPage";
 import SmoothScroll from "smooth-scroll";
 
-export const scroll = new SmoothScroll('a[href*="#"]', {
-  speed: 1000,
-  speedAsDuration: true,
-});
+
 
 function App() {
   const [loading, setLoading] = useState(true);
+
+    useEffect(() => {
+    new SmoothScroll('a[href*="#"]', {
+      speed: 1000,
+      speedAsDuration: true,
+    });
+  }, []);
 
   const handleLoadingComplete = () => {
     setLoading(false);
