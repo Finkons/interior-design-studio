@@ -1,8 +1,6 @@
 import styled from "styled-components";
 
 export const Wrapper = styled.div`
-// desktop
-padding: 0 40px;
 display: flex;
 position: relative;
 padding-top: 138px;
@@ -92,8 +90,6 @@ font-style: normal;
 font-weight: 700;
 line-height: 120%; /* 19.2px */
 text-transform: uppercase;
-
-
 padding-top: 10px;
 margin-right: 122px;
 `;
@@ -106,8 +102,8 @@ width: 950px;
 height: 1059px;
 top: -120px;
 right: 80px;
-
 `;
+
 export const FlexList = styled.ul`
 display: flex;
 justify-content: flex-end;

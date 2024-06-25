@@ -14,6 +14,8 @@ body {
     background-image: url('BG.png');
     background-size: cover;
     background-repeat: no-repeat;
+    line-height: 100%;
+    font-style: normal;
   }
   s * {
     box-sizing: border-box;
