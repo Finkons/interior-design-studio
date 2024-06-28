@@ -1,10 +1,22 @@
 import styled from "styled-components";
+import mediaBp from '../../styles/breakpoints';
 
 
 export const SectionConteiner =styled.section`
+    ${mediaBp('tablet')} {
+
+    }
+    ${mediaBp('desktop')} {
 padding: 235px 0 6px 0;
+
+    }
+
 `;
 export const AncorLink = styled.div`
+    ${mediaBp('tablet')} {
+
+    }
+    ${mediaBp('desktop')} {
 color: #B4B4B4;
 text-align: justify;
 font-family: Roboto;
@@ -15,17 +27,28 @@ text-transform: uppercase;
 
 padding-right: 40px;
 text-align: right;
+
+    }
+
 `;
 
 export const BlockWrapper= styled.div`
-display: flex;
+    ${mediaBp('tablet')} {
+    }
+    ${mediaBp('desktop')} {
+    display: flex;
+    }
+
 `;
 
 export const BlockList = styled.ul`
 `;
 
 export const Li = styled.li`
-  display: flex;
+    ${mediaBp('tablet')} {
+    }
+    ${mediaBp('desktop')} {
+      display: flex;
   padding-bottom: 200px;
   & > p {
   margin-left: -24px;
@@ -42,25 +65,40 @@ export const Li = styled.li`
   }
   flex-direction: row-reverse;
 }
+    }
+
 `;
 
 export const PhotoWrapper= styled.div`
- width: 50%;
+    ${mediaBp('tablet')} {
+    }
+    ${mediaBp('desktop')} {
+    width: 50%;
 background-image: ${(props) => `url(${props.children.props.img})`};
+    }
+ 
 `;
 
 export const Photo = styled.div`
-width: 950px;
+    ${mediaBp('tablet')} {
+    }
+    ${mediaBp('desktop')} {
+    width: 950px;
 height: 960px;
 backdrop-filter: grayscale(80%);
 transition: backdrop-filter 0.4s ease-in-out;
   &:hover {
    backdrop-filter: grayscale(0%);
  }
+    }
+
 `;
 
 export const TextBlock = styled.p`
-height: 960px;
+    ${mediaBp('tablet')} {
+    }
+    ${mediaBp('desktop')} {
+    height: 960px;
 text-align: left;
 font-size: 400px;
 font-weight: 900;
@@ -75,20 +113,32 @@ mix-blend-mode: color-burn;
 filter: blur(2.5px);
 
 word-break:break-word;
+    }
+
 `;
 
 export const TextContent = styled.div`
-text-align: left;
+    ${mediaBp('tablet')} {
+    }
+    ${mediaBp('desktop')} {
+    text-align: left;
+    }
+
 
 `;
 
 export const Text = styled.p`
-line-height: 100%;
+    ${mediaBp('tablet')} {
+    }
+    ${mediaBp('desktop')} {
+    line-height: 100%;
 font-weight: 900;
 color: #808080;
 font-size: 128px;
 letter-spacing: -6.4px;
 text-transform: uppercase;
+    }
+
 `;
 
 export const ColoredText = styled.span`
@@ -96,20 +146,33 @@ color: #E50185;
 `;
 
 export const BlurText = styled.span`
-background: linear-gradient(93deg, #B2B2B2 2.07%, rgba(178, 178, 178, 0.00) 106.43%);
+    ${mediaBp('tablet')} {
+    }
+    ${mediaBp('desktop')} {
+    background: linear-gradient(93deg, #B2B2B2 2.07%, rgba(178, 178, 178, 0.00) 106.43%);
 background-clip: text;
 -webkit-background-clip: text;
 -webkit-text-fill-color: transparent;
 filter: blur(2.5px);
+    }
+
 `;
 
 export const TextWrapper = styled.div`
-  display: flex;
+    ${mediaBp('tablet')} {
+    }
+    ${mediaBp('desktop')} {
+      display: flex;
   justify-content: center;
+    }
+
 `;
 
 export const Button = styled.button`
-width: 242px;
+    ${mediaBp('tablet')} {
+    }
+    ${mediaBp('desktop')} {
+    width: 242px;
 height: 54px;
 color: #292929;
 font-family: Roboto;
@@ -122,5 +185,7 @@ border: none;
 cursor: pointer;
 
 margin: -30px 45% 0 55%;
+    }
+
 `;
 
