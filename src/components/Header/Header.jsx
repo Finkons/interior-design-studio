@@ -15,11 +15,11 @@ const Header = () => {
         <img src="/logo.svg" alt="logo" height="64" width="172" />
       </LogoWrap>
       <StyledNav>
-        <StyledLink to="/#about">About Us</StyledLink>
-        <StyledLink to="/#portfolio">Portfolio</StyledLink>
-        <StyledLink to="/#services">Services</StyledLink>
-        <StyledLink to="/#team">Our Team</StyledLink>
-        <StyledLink to="/#contacts">Contacts</StyledLink>
+        <StyledLink href="/#about">About Us</StyledLink>
+        <StyledLink href="/#portfolio">Portfolio</StyledLink>
+        <StyledLink href="/#services">Services</StyledLink>
+        <StyledLink href="/#team">Our Team</StyledLink>
+        <StyledLink href="/#contacts">Contacts</StyledLink>
       </StyledNav>
       <SocialWrap>
         <SocialLink

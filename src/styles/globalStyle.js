@@ -7,9 +7,10 @@ export const GlobalStyle = createGlobalStyle`
     src: url('/fonts/PhontPhreaks Handwriting.ttf') format('truetype');
 }
 body {
+overflow-x:hidden;
  margin: 0;
     transition: all 0.5s ease;
-    font-family: "Poppins", sans-serif;
+    // font-family: "Poppins", sans-serif;
     background-color: rgba(240, 240, 240, 1); 
     background-image: url('BG.png');
     background-size: cover;
