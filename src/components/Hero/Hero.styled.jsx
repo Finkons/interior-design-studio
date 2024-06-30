@@ -1,4 +1,5 @@
 import styled from "styled-components";
+import { motion } from "framer-motion";
 
 export const Container = styled.section`
   height: 801px;
@@ -10,33 +11,21 @@ export const Container = styled.section`
   }
 `;
 
-export const TextBlack = styled.h2`
-  margin-bottom: 66px;
-  color: #292929;
-  font-family: "PhontPhreaksHandwriting";
-  font-size: 150px;
-  font-style: normal;
-  font-weight: 400;
-  line-height: 100%; /* 150px */
-  letter-spacing: 7.5px;
-  text-transform: uppercase;
-  text-align: center;
+export const TextBlack = styled(motion.svg)`
+  position: absolute;
+  top: 120px;
+  left: 470px;
 `;
 
-export const TextPink = styled.h2`
-  margin-bottom: 135px;
-  color: #e50185;
-  font-family: "PhontPhreaksHandwriting";
-  font-size: 150px;
-  font-style: normal;
-  font-weight: 400;
-  line-height: 100%; /* 150px */
-  letter-spacing: 7.5px;
-  text-transform: uppercase;
-  text-align: right;
+export const TextPink = styled(motion.svg)`
+  position: absolute;
+  top: 370px;
+  left: 1470px;
 `;
 
-export const Text = styled.p`
+export const Text = styled(motion.p)`
+  position: absolute;
+  top: 600px;
   width: 237px;
   color: #292929;
   text-align: justify;
@@ -50,14 +39,14 @@ export const Text = styled.p`
   text-transform: uppercase;
 `;
 
-export const StyledOval = styled.img`
+export const StyledOval = styled(motion.svg)`
   position: absolute;
-  top: 200px;
-  right: -40px;
+  top: 220px;
+  right: -10px;
 `;
 
-export const StyledLine = styled.img`
+export const StyledLine = styled(motion.svg)`
   position: absolute;
-  top: 560px;
+  top: 680px;
   right: -50px;
 `;
