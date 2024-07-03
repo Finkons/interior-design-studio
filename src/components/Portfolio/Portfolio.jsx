@@ -47,7 +47,7 @@ const Block = ({ items }) => {
 };
 const Portfolio = () => {
   return (
-    <SectionConteiner id="portfoli">
+    <SectionConteiner id="portfolio">
       <AncorLink>Portfolio</AncorLink>
       <Block items={items} />
       <TextWrapper>
