@@ -1,19 +1,13 @@
-import React from "react";
-import { useState, useEffect } from "react";
-import {
-  Paragraph,
-  Container,
-  ProgressBar,
-  ProgressBarContainer,
-  Logo,
-} from "./LoadingPage.styled";
+import React from 'react';
+import { useState, useEffect } from 'react';
+import { Paragraph, Container, ProgressBar, ProgressBarContainer, Logo } from './LoadingPage.styled';
 
 const LoadingPage = ({ onLoadingComplete }) => {
   const [progress, setProgress] = useState(0);
 
   useEffect(() => {
     const interval = setInterval(() => {
-      setProgress((oldProgress) => {
+      setProgress(oldProgress => {
         const newProgress = oldProgress + 1;
         if (newProgress === 100) {
           clearInterval(interval);
@@ -28,7 +22,7 @@ const LoadingPage = ({ onLoadingComplete }) => {
 
   return (
     <Container>
-      <Logo />
+      <Logo initial={{ opacity: 1 }} animate={{ opacity: 0 }} transition={{ duration: 5 }} />
       <Paragraph>{progress}%</Paragraph>
       <ProgressBarContainer>
         <ProgressBar progress={progress} />

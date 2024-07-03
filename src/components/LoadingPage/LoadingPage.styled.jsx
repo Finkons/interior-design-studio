@@ -1,8 +1,9 @@
-import styled from "styled-components";
+import styled from 'styled-components';
+import { motion } from 'framer-motion';
 
 export const Paragraph = styled.p`
   margin-bottom: 20px;
-  font-family: "Poppins", sans-serif;
+  font-family: 'Poppins', sans-serif;
   font-size: 60px;
   font-style: normal;
   font-weight: 900;
@@ -32,19 +33,19 @@ export const ProgressBarContainer = styled.div`
 `;
 
 export const ProgressBar = styled.div`
-  width: ${(props) => `calc(${props.progress}px*3.1)`};
+  width: ${props => `calc(${props.progress}px*3.1)`};
   background-color: #2e2e2e;
   height: 16px;
   border-radius: 12px;
 `;
 
-export const Logo = styled.div`
+export const Logo = styled(motion.div)`
   margin-top: 50px;
   width: 1370px;
   height: 572px;
-  background-image: url("preloader/Logo2.png");
+  background-image: url('preloader/Logo2.png');
   background-size: cover;
   background-position: center;
   flex-shrink: 0;
-  width: ${(props) => `calc(${props.progress}px*3.1)`};
+  width: ${props => `calc(${props.progress}px*3.1)`};
 `;
