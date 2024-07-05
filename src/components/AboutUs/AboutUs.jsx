@@ -46,7 +46,7 @@ const AboutUs = () => {
         Whether you're looking to <BlurContent>revamp your home</BlurContent> or <BlurContent>office</BlurContent>, our team of talented designers
         will work closely with you<ColoredText>to bring your vision to life</ColoredText>
       </Content>
-
+      <MainBtn type="button">Contact Us</MainBtn>
       <NumberBlock>
         <div>
           <CenterBlock>
@@ -72,7 +72,7 @@ const AboutUs = () => {
             </Li>
           </FlexList>
         </div>
-        <MainBtn type="button">Contact Us</MainBtn>
+        
       </NumberBlock>
     </SectionConteiner>
   );

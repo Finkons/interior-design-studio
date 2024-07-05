@@ -33,7 +33,7 @@ function App() {
         <LoadingPage onLoadingComplete={handleLoadingComplete} />
       ) : (
         <Suspense fallback={<p>...loading</p>}>
-          <GlobalStyle />
+          <GlobalStyle/ >
           <Header />
           <Hero />
           <AboutUs />
