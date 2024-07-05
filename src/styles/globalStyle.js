@@ -8,7 +8,7 @@ export const GlobalStyle = createGlobalStyle`
 }
 body {
 overflow-x:hidden;
- margin: 0;
+ margin: 0 auto;
     transition: all 0.5s ease;
     // font-family: "Poppins", sans-serif;
     background-color: rgba(240, 240, 240, 1); 
