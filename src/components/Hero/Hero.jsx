@@ -1,5 +1,5 @@
 import React from 'react';
-import { Container, GrayText, TextBlack, TextPink, Text, StyledOval, StyledLine } from './Hero.styled';
+import { Container, GraySvg, TextBlack, TextPink, Text, StyledOval, StyledLine } from './Hero.styled';
 import { motion } from 'framer-motion';
 
 // const svgVariants = {
@@ -48,7 +48,7 @@ const Hero = () => {
       {/* <GrayText initial={{ opacity: 0 }} animate={{ opacity: 1 }} transition={{ duration: 5 }}>
         Nude walls
       </GrayText> */}
-      <motion.svg
+      <GraySvg
         xmlns="http://www.w3.org/2000/svg"
         width="1397"
         height="592"
@@ -96,7 +96,7 @@ const Hero = () => {
             <feGaussianBlur stdDeviation="2.5" result="effect1_foregroundBlur_5061_141" />
           </filter>
         </defs>
-      </motion.svg>
+      </GraySvg>
 
       <TextBlack width="940" height="188" viewBox="0 0 940 188" fill="none" xmlns="http://www.w3.org/2000/svg">
         <defs>
