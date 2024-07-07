@@ -59,15 +59,15 @@ li {
     height: auto;
   }
   .container {
-        max-width: 1280px;
+        max-width: 320px;
         margin: 0 auto;
         padding: 0 15px;
       
-        ${mediaBp("tablet")} {
+        ${mediaBp('tablet')} {
           max-width: 768px;
         }
-       ${mediaBp("mobile")} {
-          max-width: 320px;
+       ${mediaBp('deskop')} {
+          max-width: 1280px;
         }
       }
      

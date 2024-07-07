@@ -1,12 +1,5 @@
-import React from "react";
-import {
-  Container,
-  LogoWrap,
-  StyledNav,
-  StyledLink,
-  SocialWrap,
-  SocialLink,
-} from "./Header.styled";
+import React from 'react';
+import { Container, LogoWrap, StyledNav, StyledLink, SocialWrap, SocialLink, BurgerBtn } from './Header.styled';
 
 const Header = () => {
   return (
@@ -21,19 +14,14 @@ const Header = () => {
         <StyledLink href="/#team">Our Team</StyledLink>
         <StyledLink href="/#contacts">Contacts</StyledLink>
       </StyledNav>
+      <BurgerBtn>
+        <img src="header/burger.svg" alt="burger menu button" />
+      </BurgerBtn>
       <SocialWrap>
-        <SocialLink
-          to="https://www.instagram.com/"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
+        <SocialLink to="https://www.instagram.com/" target="_blank" rel="noopener noreferrer">
           Instagram
         </SocialLink>
-        <SocialLink
-          to="https://www.behance.net/"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
+        <SocialLink to="https://www.behance.net/" target="_blank" rel="noopener noreferrer">
           Behance
         </SocialLink>
       </SocialWrap>
