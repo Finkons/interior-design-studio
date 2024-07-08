@@ -12,7 +12,7 @@ import { StartText, LineBox } from "./Portfolio.styled";
       strokeWidth: 3,
       pathLength: 1,
       stroke: "#292929",
-    }
+    },
   };
 
   const textVariants = {
@@ -64,7 +64,7 @@ import { StartText, LineBox } from "./Portfolio.styled";
             transition={{
               ease: "easeInOut",
               duration: 1,
-              delay: 1.5
+              delay: 1.3
               }}
         />
           </LineBox>
