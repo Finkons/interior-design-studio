@@ -2,6 +2,7 @@ import styled from 'styled-components';
 import mediaBp from '../../styles/breakpoints';
 import { setBGImage } from '../../helpers/setBGImage';
 import { setWidthImage, setHeightImage } from '../../helpers/setSizeImage';
+import { motion } from 'framer-motion';
 export const SectionConteiner = styled.section`
 margin: 0 auto;
   ${mediaBp('tablet')} {
@@ -265,3 +266,27 @@ top: 240px;
 left: 0;
 position: absolute;
 `;
+export const RelativBox=styled.div`
+  position: relative;
+  width: 100%;
+
+  `;
+export const StartText = styled(motion.p)`
+  position: absolute;
+  top: -104px;
+left: 75%;
+  width: 237px;
+color: #E50185;
+font-family: 'PhontPhreaksHandwriting';
+font-size: 150px;
+font-style: normal;
+font-weight: 400;
+line-height: 100%; /* 150px */
+letter-spacing: 7.5px;
+text-transform: uppercase;
+`;
+export const LineBox = styled(motion.svg)`
+  width: 65%;
+position: absolute;
+  top: -210px;
+  left: 38%;`;

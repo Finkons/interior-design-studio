@@ -20,8 +20,9 @@ import {
   BtnBlock,
   PositionTop240, LiRevers,
   PositionTop0,
-  PositionRight0, BtnBlockRevers
+  PositionRight0, BtnBlockRevers, RelativBox
 } from './Portfolio.styled';
+import SvgStartLine from './SvgStartLine';
 
 const Portfolio = () => {
   return (
@@ -89,6 +90,7 @@ const Portfolio = () => {
             </BtnBlock>
           </Li>
     </BlockList>
+
       <TextWrapper>
         <TextContent>
           <Text>
@@ -102,6 +104,9 @@ const Portfolio = () => {
         </TextContent>
       </TextWrapper>
       <Button>+ sample project design and implementation photos in the messenger</Button>
+      <RelativBox>
+      <SvgStartLine/>
+      </RelativBox>
     </SectionConteiner>
   );
 };
