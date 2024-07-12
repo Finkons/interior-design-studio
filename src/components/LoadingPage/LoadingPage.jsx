@@ -1,4 +1,5 @@
 import React from 'react';
+import { AnimatePresence, AtimatePresence } from 'framer-motion';
 import { useState, useEffect } from 'react';
 import { Paragraph, Container, ProgressBar, ProgressBarContainer, Logo } from './LoadingPage.styled';
 
@@ -22,11 +23,13 @@ const LoadingPage = ({ onLoadingComplete }) => {
 
   return (
     <Container>
-      <Logo initial={{ opacity: 1 }} animate={{ opacity: 0 }} transition={{ duration: 5 }} />
-      <Paragraph>{progress}%</Paragraph>
-      <ProgressBarContainer>
-        <ProgressBar progress={progress} />
-      </ProgressBarContainer>
+      <AnimatePresence>
+        <Logo initial={{ opacity: 1, scale: 1 }} animate={{ opacity: 0, scale: 0.9 }} transition={{ duration: 5, ease: 'easeOut' }} />
+        <Paragraph>{progress}%</Paragraph>
+        <ProgressBarContainer>
+          <ProgressBar progress={progress} />
+        </ProgressBarContainer>
+      </AnimatePresence>
     </Container>
   );
 };

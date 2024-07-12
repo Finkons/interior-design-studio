@@ -18,25 +18,6 @@ export const Container = styled.section`
   }
 `;
 
-export const GrayText = styled(motion.p)`
-  color: rgba(0, 0, 0, 0.15);
-  // background: url('hero/texture.png') no-repeat center center;
-  // background-size: cover;
-  // color: black;
-  // -webkit-text-fill-color: transparent;
-  // -webkit-background-clip: text;
-  // -moz-background-clip: text;
-  // background-clip: text;
-  text-align: left;
-  font-family: Poppins;
-  font-size: 400px;
-  font-style: normal;
-  font-weight: 800;
-  line-height: 73%;
-  letter-spacing: -23px;
-  text-transform: uppercase;
-`;
-
 export const TextBlack = styled(motion.svg)`
   position: absolute;
   top: 70px;
@@ -77,30 +58,39 @@ export const TextPink = styled(motion.svg)`
   }
 `;
 
-export const Text = styled(motion.p)`
+export const TextWrap = styled.div`
   position: absolute;
-  top: 250px;
-  left: 30px;
-  width: 130px;
+  top: 240px;
+  right: 230px;
+  width: 150px;
+
+  ${mediaBp('tablet')} {
+    top: 340px;
+    right: 300px;
+    width: 200px;
+  }
+  ${mediaBp('desktop')} {
+    top: 650px;
+    left: 10px;
+    width: 237px;
+  }
+`;
+
+export const Text = styled(motion.p)`
   color: #292929;
-  text-align: justify;
   font-family: Poppins;
-  font-size: 10px;
+  font-size: 8px;
   font-style: normal;
   font-weight: 700;
   line-height: 130%; /* 18.2px */
   letter-spacing: 0.7px;
   text-transform: uppercase;
+  margin: 1px 0;
+
   ${mediaBp('tablet')} {
-    top: 350px;
-    left: 500px;
-    width: 200px;
-    font-size: 14px;
+    font-size: 13px;
   }
   ${mediaBp('desktop')} {
-    top: 650px;
-    left: 1150px;
-    width: 237px;
     font-size: 14px;
   }
 `;
@@ -146,7 +136,7 @@ export const StyledLine = styled(motion.svg)`
   }
 `;
 
-export const GraySvg = styled(motion.svg)`
+export const GrayStyledSvg = styled(motion.svg)`
   position: absolute;
   top: 50px;
   left: 0px;
