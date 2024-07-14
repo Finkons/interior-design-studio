@@ -2,7 +2,7 @@ import styled from 'styled-components';
 import { motion } from 'framer-motion';
 import mediaBp from '../../styles/breakpoints';
 
-export const Paragraph = styled.p`
+export const Paragraph = styled(motion.p)`
   margin-bottom: 20px;
   font-family: 'Poppins', sans-serif;
   font-size: 36px;
@@ -38,7 +38,7 @@ export const ProgressBarContainer = styled.div`
   background-color: #fdf6f6;
 `;
 
-export const ProgressBar = styled.div`
+export const ProgressBar = styled(motion.div)`
   width: ${props => `calc(${props.progress}px*3.1)`};
   background-color: #2e2e2e;
   height: 8px;

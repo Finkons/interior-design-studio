@@ -10,13 +10,13 @@ body {
 overflow-x:hidden;
  margin: 0 auto;
     transition: all 0.5s ease;
-    // font-family: "Poppins", sans-serif;
     background-color: rgba(240, 240, 240, 1); 
     background-image: url('BG.png');
     background-size: cover;
     background-repeat: no-repeat;
     line-height: 100%;
     font-style: normal;
+    
   }
   s * {
     box-sizing: border-box;
