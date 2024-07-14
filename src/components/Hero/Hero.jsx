@@ -1,6 +1,5 @@
 import React from 'react';
 import { Container, Text, TextWrap } from './Hero.styled';
-import { motion } from 'framer-motion';
 import GraySvg from './GraySvg';
 import BlackTextSvg from './BlackTextSvg';
 import PinkTextSvg from './PinkTextSvg';
