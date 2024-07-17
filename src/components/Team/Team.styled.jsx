@@ -97,8 +97,8 @@ export const Wrap = styled.div`
   background-size: cover;
   background-repeat: no-repeat;
   ${mediaBp('tablet')} {
-    width: 80vw;
-    height: 483px;
+    width: 100%;
+    height: 683px;
     margin-left: auto;
     margin-right: 0;
   }
@@ -112,11 +112,14 @@ export const Wrap = styled.div`
 
 export const TitleContainer = styled.div`
   position: absolute;
+  display: none;
   ${mediaBp('tablet')} {
+    display: block;
     top: ${setTopTablet};
     left: ${setLeftTablet};
   }
   ${mediaBp('desktop')} {
+    display: block;
     top: ${setTopDesktop};
     left: ${setLeftDesktop};
   }
@@ -127,6 +130,7 @@ export const Name = styled(motion.button)`
   border: none;
   width: 170px;
   margin-bottom: 6px;
+
   color: #e50185;
   font-family: Roboto;
   font-size: 32px;
@@ -137,9 +141,9 @@ export const Name = styled(motion.button)`
   text-transform: uppercase;
   text-align: left;
   ${mediaBp('tablet')} {
-    width: 300px;
+    width: 250px;
     margin-bottom: 8px;
-    font-size: 48px;
+    font-size: 40px;
   }
   ${mediaBp('desktop')} {
     width: 320px;
@@ -192,17 +196,60 @@ export const Description = styled.p`
 export const SocialWrap = styled.div`
   width: 100px;
   display: grid;
-  grid-template-columns: 1fr 1fr 1fr 1fr;
-  grid-template-rows: 1fr;
-  gap: 0px 8px;
+  grid-template-columns: 1fr 1fr;
+  grid-template-rows: 1fr 1fr;
+  gap: 0px 13px;
+  ${mediaBp('tablet')} {
+    width: 100px;
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr 1fr;
+    grid-template-rows: 1fr;
+    gap: 0px 8px;
+  }
+  ${mediaBp('desktop')} {
+    width: 100px;
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr 1fr;
+    grid-template-rows: 1fr;
+    gap: 0px 8px;
+  }
 `;
 
 export const MobileWrap = styled.div`
   display: block;
+  padding: 60px 0px;
   ${mediaBp('tablet')} {
     display: none;
   }
   ${mediaBp('desktop')} {
     display: none;
   }
+`;
+
+export const TreeImg = styled.img`
+  position: absolute;
+  left: 60%;
+  width: 176px;
+  height: 555px;
+  z-index: 10;
+`;
+
+export const LineImg = styled.img`
+  position: absolute;
+  top: 83%;
+  left: 11%;
+  z-index: 20;
+`;
+
+export const EmployeeImg = styled.img`
+  position: absolute;
+  top: 40%;
+  left: 15%;
+  z-index: 5;
+`;
+
+export const StyledButton = styled.button`
+  border: none;
+  background-color: transparent;
+  cursor: pointer;
 `;

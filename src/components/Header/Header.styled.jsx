@@ -38,6 +38,7 @@ export const LogoWrap = styled.div`
 export const StyledNav = styled.nav`
   gap: 20px;
   display: none;
+
   ${mediaBp('tablet')} {
     display: flex;
     flex-direction: row;
@@ -63,8 +64,10 @@ export const StyledLink = styled.a`
   font-weight: 700;
   line-height: 150%; /* 30px */
   text-transform: uppercase;
-  &.active {
-    color: #e50185;
+  transition: color 1s;
+  transition-timing-function: linear;
+  &:hover {
+    color: #E50185;
   }
   ${mediaBp('tablet')} {
     font-size: 14px;
