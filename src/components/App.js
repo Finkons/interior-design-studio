@@ -34,13 +34,13 @@ function App() {
       ) : (
         <Suspense fallback={<p>...loading</p>}>
           <GlobalStyle/ >
-          <Header />
-          <Hero />
+          {/* <Header />
+          <Hero /> */}
           <AboutUs />
-          <Portfolio />
+          {/* <Portfolio />
           <Services />
           <Team />
-          <Footer />
+          <Footer /> */}
         </Suspense>
       )}
     </>
