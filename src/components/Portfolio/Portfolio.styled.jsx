@@ -220,27 +220,26 @@ export const PositionTop240 = styled.div`
   left: 62%;
   position: absolute;
 `;
-export const BtnBlock=styled.div`
+export const BtnBlock = styled.div`
   ${mediaBp('tablet')} {
   }
   ${mediaBp('desktop')} {
-  padding-left: 40px;
-position: absolute;
-text-align: center;
-left: 50%;
-bottom:0;
+    padding-left: 40px;
+    position: absolute;
+    text-align: center;
+    left: 50%;
+    bottom: 0;
   }
- 
-
 `;
-export const BtnBlockRevers=styled.div`
+export const BtnBlockRevers = styled.div`
   ${mediaBp('tablet')} {
   }
   ${mediaBp('desktop')} {
-  position: absolute;
-text-align: center;
-left: 26%;
-bottom:0;}
+    position: absolute;
+    text-align: center;
+    left: 26%;
+    bottom: 0;
+  }
 `;
 export const PositionTop0 = styled.div`
   top: 0px;
@@ -274,13 +273,9 @@ export const LineBox = styled(motion.svg)`
   ${mediaBp('tablet')} {
   }
   ${mediaBp('desktop')} {
-   
-   
     width: 65%;
-position: absolute;
-  top: -210px;
-  left: 38%; }`
- 
-;
-
+    position: absolute;
+    top: -210px;
+    left: 38%;
+  }
 `;
