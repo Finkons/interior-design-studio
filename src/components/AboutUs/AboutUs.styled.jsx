@@ -1,78 +1,65 @@
 import styled from 'styled-components';
 import mediaBp from '../../styles/breakpoints';
 
-export const Wrapper = styled.div`
-  padding-bottom: 60px;
-  ${mediaBp('tablet')} {
-  }
-  ${mediaBp('desktop')} {
-    display: flex;
-    padding-top: 100px;
-    padding-bottom: 100px;
-  }
-`;
 export const SectionConteiner = styled.section`
   position: relative;
-  padding: 0 16px;
   margin: 0 auto;
-  ${mediaBp('tablet')} {
-  }
-  ${mediaBp('desktop')} {
-    padding: 0 40px;
-    max-width: 1920px;
-  }
 `;
 export const TextBlock = styled.div`
+  width: calc(300px + (1500 - 320) * ((100vw - 320px) / (1920 - 320)));
   color: var(--Color-Neutral-black, #808080);
   font-family: Poppins;
-  font-size: 32px;
+  font-size: clamp(1.75rem, 2vw + 1.35rem, 3.75rem);
   font-style: normal;
   font-weight: 900;
   line-height: 100%; /* 32px */
-  letter-spacing: -1.6px;
+  letter-spacing: -0.06em;
   text-transform: uppercase;
-  ${mediaBp('tablet')} {
-  }
-  ${mediaBp('desktop')} {
-    width: 1160px;
-    font-size: 60px;
-    letter-spacing: -3px;
-  }
 `;
 export const NumberBlock = styled.div`
+ position: absolute;
+  right: 6px;
+  top:  calc(570px + (660 - 570) * ((100vw - 780px) / (780 - 320)));
   padding-top: 110px;
   ${mediaBp('tablet')} {
+  position: absolute;
+  top:  calc(420px + (520 - 420) * ((100vw - 1280px) / (1280 - 768)));
+  right: 10px;
   }
   ${mediaBp('desktop')} {
-    padding-top: 0px;
-    position: absolute;
-    bottom: -110px;
-    right: 30px;
+   position: absolute;
+  top: calc(340px + (680 - 340) * ((100vw - 780px) / (1920 - 320)));
+  right: 0;
   }
 `;
 export const CenterBlock = styled.div`
-  margin-bottom: 40px;
+  margin-bottom: 20px;
+  padding-left: 50px;
   ${mediaBp('tablet')} {
+  margin-bottom: 20px;
+  text-align: end;
+  padding-right: calc(40px + (100 - 40) * ((100vw - 768px) / (1280 - 768)));
   }
   ${mediaBp('desktop')} {
     margin-bottom: 0;
-    text-align: center;
+     text-align: end;
+   padding-right: calc(100px + (260 - 100) * ((100vw - 768px) / (1920 - 768)));
     
   }
 `;
 export const NumberTitle = styled.div`
   color: var(--1, #292929);
   font-family: Poppins;
-  font-size: 60px;
+  font-size: calc(60px + (128 - 60) * ((100vw - 320px) / (1920 - 320)));
   font-style: normal;
   font-weight: 900;
   line-height: 120%; /* 72px */
   letter-spacing: -4.2px;
-  margin-left: 220px;
+  margin-left: 100px;
   ${mediaBp('tablet')} {
+  
   }
   ${mediaBp('desktop')} {
-    font-size: 128px;
     letter-spacing: -8.96px;
     margin-left: 0;
   }
@@ -80,7 +67,7 @@ export const NumberTitle = styled.div`
 export const Title = styled.p`
   color: #292929;
   font-family: Poppins;
-  font-size: 10px;
+  font-size: calc(10px + (18 - 10) * ((100vw - 320px) / (1920 - 320)));
   font-style: normal;
   font-weight: 400;
   line-height: 150%; /* 15px */
@@ -91,7 +78,6 @@ export const Title = styled.p`
   ${mediaBp('tablet')} {
   }
   ${mediaBp('desktop')} {
-    font-size: 18px;
     text-align: start;
     margin-top: -28px;
     padding-left: 14px;
@@ -100,7 +86,7 @@ export const Title = styled.p`
 export const GrayTitle = styled.p`
   color: #b2b2b2;
   font-family: Poppins;
-  font-size: 60px;
+  font-size: calc(60px + (128 - 60) * ((100vw - 320px) / (1920 - 320)));
   font-style: normal;
   font-weight: 900;
   line-height: 120%; /* 72px */
@@ -108,25 +94,34 @@ export const GrayTitle = styled.p`
   ${mediaBp('tablet')} {
   }
   ${mediaBp('desktop')} {
-    font-size: 128px;
     letter-spacing: -8.96px;
   }
 `;
-
-export const Text = styled.p`
-  padding-left: 130px;
+export const Space=styled.span`
+white-space: nowrap;
   ${mediaBp('tablet')} {
+white-space: normal;
   }
   ${mediaBp('desktop')} {
-    padding-left: 0;
+    white-space: normal;
   }
+
+`
+export const Text = styled.p`
+  padding-left: calc(70px + (239 - 70) * ((100vw - 320px) / (1920 - 320)));
+
 `;
 export const TextIndent = styled.p`
-  ${mediaBp('tablet')} {
+padding-left: 0px;
+${mediaBp('tablet')} {
+padding-left: calc(70px + (239 - 70) * ((100vw - 320px) / (1920 - 320)));
+text-indent: 80px;
   }
-  ${mediaBp('desktop')} {
-    text-indent: 210px;
-  }
+${mediaBp('desktop')} {
+padding-left: calc(70px + (239 - 70) * ((100vw - 320px) / (1920 - 320)));
+text-indent: 180px;
+
+}
 `;
 export const ColoredText = styled.span`
   color: #e50185;
@@ -153,25 +148,26 @@ export const AncorLink = styled.div`
     min-width: 78px;
   }
 `;
-export const ImageBox = styled.div`
+
+export const StyledSvg =styled.svg`
+  height: auto;
+  left:  12%;
   position: absolute;
-  background-image: url('aboutUs/sketch_mob.svg');
-  width: 320px;
-  height: 522px;
-  right: 0;
   overflow: hidden;
-  ${mediaBp('tablet')} {
+  top: 150px;
+  width: calc(460px + (950 - 460) * ((100vw - 320px) / (1920 - 320)));
+ ${mediaBp('tablet')} {
+  left: 50%;
+  top: -138px;
   }
   ${mediaBp('desktop')} {
-    position: absolute;
-    background-image: url('aboutUs/sketch.svg');
-    width: 950px;
-    height: 1059px;
+    left: 50%;
     top: -138px;
-   
-  }
-`;
+    }
+
+`
 export const FlexList = styled.ul`
+
   display: flex;
   justify-content: space-between;
   ${mediaBp('tablet')} {
@@ -184,95 +180,38 @@ export const Li = styled.li`
   ${mediaBp('tablet')} {
   }
   ${mediaBp('desktop')} {
-    margin-right: 100px;
+    margin-right: calc(40px + (90 - 40) * ((100vw - 1280px) / (1920 - 1280)));
     &:last-child {
       margin-right: 0px;
       margin-left: 0px;
     }
   }
 `;
-export const Content = styled.p`
-  color: #292929;
-  text-align: justify;
-  font-family: Poppins;
-  font-size: 14px;
-  font-style: normal;
-  font-weight: 400;
-  line-height: 130%; /* 18.2px */
-  width: 230px;
-  margin-bottom: 40px;
-  text-indent: 62px;
-  ${mediaBp('tablet')} {
-  }
-  ${mediaBp('desktop')} {
-    text-indent: 45px;
-    font-size: 18px;
-    margin-left: 440px;
-    width: 360px;
-    margin-bottom: 50px;
-  }
-`;
+
 export const BlurContent = styled.span`
   color: rgba(41, 41, 41, 0.5);
 `;
-export const MainBtn = styled.button`
-  display: flex;
-  flex-direction: column;
-  border: none;
-  color: #e50185;
-  font-family: 'PhontPhreaksHandwriting';
-  font-size: 40px;
-  font-style: normal;
-  font-weight: 400;
-  line-height: 100%; /* 40px */
-  letter-spacing: 2px;
-  text-transform: uppercase;
-  background-color: transparent;
 
-  &::after {
-    content: url("data:image/svg+xml;charset=UTF-8,<svg xmlns='http://www.w3.org/2000/svg' width='230' height='21' fill='none'><path fill='%23292929' d='M226.865 10.89c.046-.913-1.651-.848-2.201-1.075-2.941-.518-5.902-.811-8.859-1.216-7.065-.757-14.14-1.303-21.224-1.806-28.942-1.969-57.891-4.05-86.858-4.267 25.66-.863 51.339-1.447 77.027-.828 9.283.304 18.582.663 27.859 1.248 5.449.228 11.144 1.04 16.487.785-.012 0-.011.015-.023.016-10.452-1.93-21.064-1.943-31.607-2.55-17.676-.756-35.369-.88-53.045-.573-34.37.574-68.718 2.015-102.987 4.416-1.849.16-3.697.32-5.537.604-.4.015-.546.725-.156.921.867.415 1.837.024 2.73-.082 42.515-4.095 85.327-3.506 127.983-.583 18.178 1.337 36.396 2.012 54.508 4.347-71.496.308-143.13 1.089-214.266 8.61-9.72 1.463-7.267 1.738 1.15.828 72.645-7.853 146.39-7.622 219.019-8.795Z'/></svg>");
-    display: inline-block;
-    width: 220px;
-    height: 20px;
-    margin-top: -12px;
-  }
-  ${mediaBp('tablet')} {
-  }
-  ${mediaBp('desktop')} {
-    
-margin: 154px auto 0 24%;
-
-
-    font-size: 64px;
-    letter-spacing: 3.2px;
-    &::after {
-      content: url("data:image/svg+xml;charset=UTF-8,<svg xmlns='http://www.w3.org/2000/svg' width='366' height='28' fill='none'><path fill='%23292929' d='M361.63 19.012c.101-1.451-2.602-1.398-3.471-1.774-4.665-.911-9.369-1.464-14.064-2.196-11.221-1.41-22.464-2.486-33.724-3.494-46-3.982-92.01-8.141-138.102-9.337 40.861-.62 81.743-.795 122.607.943 14.763.757 29.551 1.601 44.298 2.804 8.665.522 17.705 1.98 26.215 1.732-.02.001-.018.024-.038.025-16.576-3.376-33.464-3.709-50.225-4.983-28.108-1.722-56.262-2.44-84.4-2.469C176.012.167 121.309 1.449 66.703 4.262c-2.946.2-5.893.4-8.83.8-.637.01-.89 1.136-.274 1.46 1.368.684 2.923.09 4.346-.052C129.722 1.206 197.838 3.4 265.637 9.301c28.889 2.66 57.861 4.269 86.618 8.515-113.789-1.609-227.811-2.471-341.235 7.402C-4.492 27.26-.595 27.77 12.827 26.57c115.834-10.357 233.187-7.823 348.803-7.557Z'/></svg>");
-      display: inline-block;
-      width: 366px;
-      height: 28px;
-      margin-top: 0;
-    }
-  }
-`;
 export const TitleCenter = styled.p`
+font-size: calc(10px + (18 - 10) * ((100vw - 320px) / (1920 - 320)));
   color: #292929;
   font-family: Poppins;
-  font-size: 10px;
   font-style: normal;
   font-weight: 400;
   line-height: 150%; /* 15px */
   text-transform: uppercase;
   text-align: start;
   margin-top: -18px;
-  padding-left: 222px;
+  padding-left: 100px;
   ${mediaBp('tablet')} {
+   text-align: end;
+   padding-right: 100px;
   }
   ${mediaBp('desktop')} {
-    font-size: 18px;
     margin-top: -28px;
-    
-   
-  
+    text-align: end;
+    text-align: end;
+    padding-right: calc(100px + (200 - 100) * ((100vw - 768px) / (1920 - 768)));
   }
 `;
 export const Plus = styled.span`
@@ -283,3 +222,12 @@ export const Plus = styled.span`
     padding-left: 15px;
   }
 `;
+export const NumberContainer =styled.div`
+width: calc(280px + (600 - 280) * ((100vw - 320px) / (768 - 320)));
+  ${mediaBp('tablet')} {
+   width: 500px;
+  }
+  ${mediaBp('desktop')} {
+   width: calc(500px + (800 - 500) * ((100vw - 768px) / (1920 - 1280)));
+  }
+`

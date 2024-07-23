@@ -1,12 +1,10 @@
 import React from 'react';
 import {
-  Wrapper,
   CenterBlock,
   SectionConteiner,
   Li,
   GrayTitle,
   AncorLink,
-  ImageBox,
   Text,
   ColoredText,
   BlurText,
@@ -15,40 +13,30 @@ import {
   NumberTitle,
   Title,
   FlexList,
-  Content,
-  BlurContent,
-  MainBtn,
   TitleCenter,
   Plus,
   TextIndent,
+  Space, NumberContainer
 } from './AboutUs.styled';
+import SvgBlock from './SvgBlock';
+import BtnContentBlock from './BtnContentBlock/Btn ContentBlock';
 const AboutUs = () => {
   return (
     <SectionConteiner id="about">
-      <Wrapper>
         <AncorLink>About Us</AncorLink>
         <TextBlock>
           <Text>
-            Our <ColoredText>interior design studio</ColoredText>
+           <Space>Our <ColoredText>interior</ColoredText></Space> <Space><ColoredText>design studio</ColoredText></Space>
           </Text>
-          <Text>offers a range of benefits that</Text>
+          <Text>offers a range of <Space>benefits that</Space></Text>
           <TextIndent>
             <BlurText>will enhance your</BlurText> living or working space
           </TextIndent>
         </TextBlock>
-        <ImageBox />
-      </Wrapper>
-      <Content>
-        With our <ColoredText>expertise</ColoredText> and <ColoredText>attention</ColoredText> to detail, we can create a space that is both{' '}
-        <BlurContent>functional</BlurContent> and <BlurContent>visually stunning</BlurContent>
-      </Content>
-      <Content>
-        Whether you're looking to <BlurContent>revamp your home</BlurContent> or <BlurContent>office</BlurContent>, our team of talented designers
-        will work closely with you<ColoredText>to bring your vision to life</ColoredText>
-      </Content>
-      <MainBtn type="button">Contact Us</MainBtn>
-      <NumberBlock>
-        <div>
+        <BtnContentBlock/> 
+        <SvgBlock />
+       <NumberBlock>
+        <NumberContainer>
           <CenterBlock>
             <NumberTitle>
               250<Plus>+</Plus>
@@ -71,8 +59,7 @@ const AboutUs = () => {
               <Title>Employees</Title>
             </Li>
           </FlexList>
-        </div>
-        
+        </NumberContainer>
       </NumberBlock>
     </SectionConteiner>
   );

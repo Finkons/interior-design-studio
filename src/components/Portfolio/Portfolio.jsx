@@ -13,15 +13,12 @@ import {
   TextWrapper,
   Button,
   PhotoWrapper,
-  Content,
-  BlurContent,
   PositionBottom,
-  BtnBlock,
   PositionTop240, LiRevers,
   PositionTop0,
   PositionRight0, BtnBlockRevers, RelativBox
 } from './Portfolio.styled';
-import SvgHoverLine from './SvgHoverLine'
+import ContentBtnBlock from './SvgHoverLine'
 import SvgStartLine from './SvgStartLine';
 
 
@@ -45,10 +42,7 @@ const Portfolio = () => {
               <Photo  />
             </PhotoWrapper>
             </PositionBottom>
-           <BtnBlock>
-            <Content>A me`s bedroom in the <ColoredText>neoclassical style</ColoredText> with elements of a stone wall creates an atmosphere of <BlurContent>masculinity and elegance.</BlurContent> Soft colors, a sophisticated furniture ensemble and the addition of stone details create a cozy <ColoredText>place for relaxation.</ColoredText></Content>
-            <SvgHoverLine/>
-            </BtnBlock>
+            <ContentBtnBlock num={0}/>
           </Li>
           <LiRevers>
             <PhotoWrapper type='4'>
@@ -66,8 +60,7 @@ const Portfolio = () => {
             </PhotoWrapper>
             </PositionTop0>
             <BtnBlockRevers>
-            <Content>The design of a children's room in the <ColoredText>style of romanticism</ColoredText> is a passion for <BlurContent>dreams and tenderness,</BlurContent> where every detail speaks of grace and peace. The color range in coffee-beige tones creates an atmosphere of <ColoredText>warmth and coziness,</ColoredText> complementing the stylish elements of the interior.</Content>
-            <SvgHoverLine/>
+            <ContentBtnBlock num={1}/>
             </BtnBlockRevers>
           </LiRevers>
           <Li>
@@ -85,10 +78,7 @@ const Portfolio = () => {
               <Photo  />
             </PhotoWrapper>
             </PositionBottom>
-            <BtnBlock>
-            <Content>Ukrainian cuisine: <ColoredText>traditional embroideries,</ColoredText> wooden furniture with carvings, ceramic tiles with <BlurContent>Ukrainian ornaments.</BlurContent> A stove or fireplace creates warmth and atmosphere. <ColoredText>Open shelves for dishes.</ColoredText> Decorative textile products emphasize the Ukrainian theme, creating <BlurContent>coziness and traditionality.</BlurContent></Content>
-            <SvgHoverLine/>
-            </BtnBlock>
+            <ContentBtnBlock num={2}/>
           </Li>
     </BlockList>
 

@@ -167,7 +167,7 @@ export const Button = styled.button`
     margin: -30px 45% 0 55%;
   }
 `;
-export const Content = styled.p`
+export const Content = styled(motion.p)`
   color: #292929;
   text-align: justify;
   font-family: Poppins;
@@ -176,7 +176,6 @@ export const Content = styled.p`
   font-weight: 400;
   line-height: 130%; /* 18.2px */
   width: 230px;
-
   text-indent: 62px;
   ${mediaBp('tablet')} {
   }
@@ -221,18 +220,27 @@ export const PositionTop240 = styled.div`
   left: 62%;
   position: absolute;
 `;
-export const BtnBlock = styled.div`
+export const BtnBlock=styled.div`
+  ${mediaBp('tablet')} {
+  }
+  ${mediaBp('desktop')} {
   padding-left: 40px;
-  position: absolute;
-  text-align: center;
-  left: 50%;
-  bottom: 0;
+position: absolute;
+text-align: center;
+left: 50%;
+bottom:0;
+  }
+ 
+
 `;
-export const BtnBlockRevers = styled.div`
+export const BtnBlockRevers=styled.div`
+  ${mediaBp('tablet')} {
+  }
+  ${mediaBp('desktop')} {
   position: absolute;
-  text-align: center;
-  left: 28%;
-  bottom: 0;
+text-align: center;
+left: 26%;
+bottom:0;}
 `;
 export const PositionTop0 = styled.div`
   top: 0px;
@@ -263,8 +271,16 @@ export const StartText = styled(motion.p)`
   text-transform: uppercase;
 `;
 export const LineBox = styled(motion.svg)`
-  width: 65%;
-  position: absolute;
+  ${mediaBp('tablet')} {
+  }
+  ${mediaBp('desktop')} {
+   
+   
+    width: 65%;
+position: absolute;
   top: -210px;
-  left: 38%;
+  left: 38%; }`
+ 
+;
+
 `;
