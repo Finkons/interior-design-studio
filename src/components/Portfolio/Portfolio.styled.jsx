@@ -4,7 +4,7 @@ import { setBGImage } from '../../helpers/setBGImage';
 import { setWidthImage, setHeightImage } from '../../helpers/setSizeImage';
 import { motion } from 'framer-motion';
 export const SectionConteiner = styled.section`
-margin: 0 auto;
+  margin: 0 auto;
   ${mediaBp('tablet')} {
   }
   ${mediaBp('desktop')} {
@@ -29,15 +29,13 @@ export const AncorLink = styled.div`
   }
 `;
 
-
-
 export const BlockList = styled.ul``;
 
 export const Li = styled.li`
   ${mediaBp('tablet')} {
   }
   ${mediaBp('desktop')} {
-    display:flex;
+    display: flex;
     position: relative;
     margin-bottom: 200px;
   }
@@ -46,7 +44,7 @@ export const LiRevers = styled.li`
   ${mediaBp('tablet')} {
   }
   ${mediaBp('desktop')} {
-    display:flex;
+    display: flex;
     position: relative;
     margin-bottom: 200px;
     flex-direction: row-reverse;
@@ -83,7 +81,6 @@ export const TextBlock = styled.p`
   ${mediaBp('tablet')} {
   }
   ${mediaBp('desktop')} {
-
     height: 960px;
     width: 920px;
     text-align: left;
@@ -104,7 +101,7 @@ export const TextBlock = styled.p`
 `;
 
 export const TextContent = styled.div`
-font-family: Poppins;
+  font-family: Poppins;
   ${mediaBp('tablet')} {
   }
   ${mediaBp('desktop')} {
@@ -123,9 +120,9 @@ export const Text = styled.p`
     letter-spacing: -6.4px;
     text-transform: uppercase;
     & > b {
-    display: inline-block;
-    font-weight: 900;
-    text-indent: 200px;
+      display: inline-block;
+      font-weight: 900;
+      text-indent: 200px;
     }
   }
 `;
@@ -138,7 +135,7 @@ export const GreyText = styled.span`
   ${mediaBp('tablet')} {
   }
   ${mediaBp('desktop')} {
-color: #b2b2b2;
+    color: #b2b2b2;
   }
 `;
 
@@ -207,23 +204,21 @@ export const MainBtn = styled.button`
   background-color: transparent;
   ${mediaBp('tablet')} {
   }
-  ${mediaBp('desktop')} {}
+  ${mediaBp('desktop')} {
     font-size: 64px;
     letter-spacing: 3.2px;
-  
-    }
   }
 `;
-export const HoverBox = styled.div``
-export const PositionBottom=styled.div`
-left:75%;
-bottom:0;
-position: absolute;
+export const HoverBox = styled.div``;
+export const PositionBottom = styled.div`
+  left: 75%;
+  bottom: 0;
+  position: absolute;
 `;
-export const PositionTop240=styled.div`
-top: 240px;
-left: 62%;
-position: absolute;
+export const PositionTop240 = styled.div`
+  top: 240px;
+  left: 62%;
+  position: absolute;
 `;
 export const BtnBlock=styled.div`
   ${mediaBp('tablet')} {
@@ -246,37 +241,34 @@ export const BtnBlockRevers=styled.div`
 text-align: center;
 left: 26%;
 bottom:0;}
-
 `;
-export const PositionTop0=styled.div`
-top: 0px;
-left: 25%;
-position: absolute;
+export const PositionTop0 = styled.div`
+  top: 0px;
+  left: 25%;
+  position: absolute;
 `;
-export const PositionRight0=styled.div`
-
-top: 240px;
-left: 0;
-position: absolute;
+export const PositionRight0 = styled.div`
+  top: 240px;
+  left: 0;
+  position: absolute;
 `;
-export const RelativBox=styled.div`
+export const RelativBox = styled.div`
   position: relative;
   width: 100%;
-
-  `;
+`;
 export const StartText = styled(motion.p)`
   position: absolute;
   top: -104px;
-left: 75%;
+  left: 75%;
   width: 237px;
-color: #E50185;
-font-family: 'PhontPhreaksHandwriting';
-font-size: 150px;
-font-style: normal;
-font-weight: 400;
-line-height: 100%; /* 150px */
-letter-spacing: 7.5px;
-text-transform: uppercase;
+  color: #e50185;
+  font-family: 'PhontPhreaksHandwriting';
+  font-size: 150px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: 100%; /* 150px */
+  letter-spacing: 7.5px;
+  text-transform: uppercase;
 `;
 export const LineBox = styled(motion.svg)`
   ${mediaBp('tablet')} {
@@ -290,3 +282,5 @@ position: absolute;
   left: 38%; }`
  
 ;
+
+`;

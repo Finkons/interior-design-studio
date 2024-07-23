@@ -22,10 +22,12 @@ const LoadingPage = ({ onLoadingComplete }) => {
 
   return (
     <Container>
-      <Logo initial={{ opacity: 1 }} animate={{ opacity: 0 }} transition={{ duration: 5 }} />
-      <Paragraph>{progress}%</Paragraph>
+      <Logo initial={{ opacity: 1, scale: 1 }} animate={{ opacity: 0, scale: 0.9 }} transition={{ duration: 5, ease: 'easeOut' }} />
+      <Paragraph initial={{ opacity: 1 }} animate={{ opacity: 0 }} transition={{ duration: 7, ease: 'easeOut' }}>
+        {progress}%
+      </Paragraph>
       <ProgressBarContainer>
-        <ProgressBar progress={progress} />
+        <ProgressBar initial={{ opacity: 1 }} animate={{ opacity: 0 }} transition={{ duration: 7, ease: 'easeOut' }} progress={progress} />
       </ProgressBarContainer>
     </Container>
   );
