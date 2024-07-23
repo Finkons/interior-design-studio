@@ -4,7 +4,6 @@ import mediaBp from '../../styles/breakpoints';
 export const SectionConteiner = styled.section`
   position: relative;
   margin: 0 auto;
-  border:5px solid green;
 `;
 export const TextBlock = styled.div`
   width: calc(300px + (1500 - 320) * ((100vw - 320px) / (1920 - 320)));
@@ -19,7 +18,6 @@ export const TextBlock = styled.div`
 `;
 export const NumberBlock = styled.div`
  position: absolute;
-border: 2px solid yellow;
   right: 6px;
   top:  calc(570px + (660 - 570) * ((100vw - 780px) / (780 - 320)));
   padding-top: 110px;
@@ -36,7 +34,6 @@ border: 2px solid yellow;
 `;
 export const CenterBlock = styled.div`
   margin-bottom: 20px;
-  border: 2px solid orange;
   padding-left: 50px;
   ${mediaBp('tablet')} {
   margin-bottom: 20px;

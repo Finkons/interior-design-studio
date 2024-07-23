@@ -61,8 +61,6 @@ export const Wrapper = styled.div`
 
 export const ContentWrapper = styled.div`
 padding-bottom: calc(380px + (500 - 380) * ((100vw - 320px) / (768 - 320)));
-
-border: 1px solid blue;
   ${mediaBp('tablet')} {
    padding-bottom: 160px;
   }
