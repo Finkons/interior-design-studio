@@ -1,25 +1,20 @@
 import React from 'react';
+import NumberSection from './NumberSection';
+
 import {
-  CenterBlock,
   SectionConteiner,
-  Li,
-  GrayTitle,
   AncorLink,
   Text,
   ColoredText,
   BlurText,
   TextBlock,
-  NumberBlock,
-  NumberTitle,
-  Title,
-  FlexList,
-  TitleCenter,
-  Plus,
   TextIndent,
-  Space, NumberContainer
+  Space
 } from './AboutUs.styled';
 import SvgBlock from './SvgBlock';
 import BtnContentBlock from './BtnContentBlock/Btn ContentBlock';
+
+
 const AboutUs = () => {
   return (
     <SectionConteiner id="about">
@@ -33,34 +28,9 @@ const AboutUs = () => {
             <BlurText>will enhance your</BlurText> living or working space
           </TextIndent>
         </TextBlock>
-        <BtnContentBlock/> 
+        <BtnContentBlock/>
         <SvgBlock />
-       <NumberBlock>
-        <NumberContainer>
-          <CenterBlock>
-            <NumberTitle>
-              250<Plus>+</Plus>
-            </NumberTitle>
-            <TitleCenter>Projects</TitleCenter>
-          </CenterBlock>
-          <FlexList>
-            <Li>
-              <GrayTitle>10</GrayTitle>
-              <Title>Years of work</Title>
-            </Li>
-            <Li>
-              <GrayTitle>
-                50<Plus>+</Plus>
-              </GrayTitle>
-              <Title>Contractors</Title>
-            </Li>
-            <Li>
-              <GrayTitle>1&#32;1</GrayTitle>
-              <Title>Employees</Title>
-            </Li>
-          </FlexList>
-        </NumberContainer>
-      </NumberBlock>
+      <NumberSection/>
     </SectionConteiner>
   );
 };

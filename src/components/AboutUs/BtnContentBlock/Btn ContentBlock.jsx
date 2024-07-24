@@ -11,10 +11,10 @@ const outlineVariants = {
     transition: { duration: 0.5, ease: "easeOut" }
   },
   hover: {
-    strokeWidth: 1.5,
+    strokeWidth: 1.8,
     pathLength: 1,
     stroke: "#292929",
-    transition: { duration: 2, ease: "easeOut" }
+    transition: { duration: 1, ease: "easeOut" }
   }
 };
 const contentVariants = {
@@ -66,15 +66,15 @@ function BtnContentBlock() {
         <BtnText>
         Contact Us
         </BtnText>
-        <motion.svg viewBox="0 0 364 29" xmlns="http://www.w3.org/2000/svg">
+        <motion.svg viewBox="0 0 366 28" xmlns="http://www.w3.org/2000/svg">
           <motion.path
             variants={outlineVariants}
-            strokeWidth="1"
+            strokeWidth="1.8"
             fill="none"
             stroke= "#292929"
            
          
-          d="M12 1.9C9.2.1 336 .7 356.4 5c0 0-134.3 1-179.8 1.7-29 .5-135.8 4.5-135.8 4.5s109.5 4.5 138.8 6.2c44.9 2.7 179.2 8.7 179.2 8.7s-66.3-4.2-140.5-4.5C116 21.4-4 24.7.5 27"
+          d="M365.2 7.3S246.7-.9 201.7 1C168.5 2.4 73.9 3.3 58.5 5.8c-.1 0-.1.2 0 .2 0 0 100.7-1.4 133.3-1.4 43.7 0 170.5 14.1 170.5 14.1s-148.7.4-198.2.3l-55 1.3L1 26.3"
           />
         </motion.svg>
       </motion.div>

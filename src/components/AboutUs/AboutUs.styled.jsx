@@ -1,9 +1,10 @@
 import styled from 'styled-components';
 import mediaBp from '../../styles/breakpoints';
-
+import { motion } from "framer-motion";
 export const SectionConteiner = styled.section`
   position: relative;
   margin: 0 auto;
+  padding-bottom: 50px;
 `;
 export const TextBlock = styled.div`
   width: calc(300px + (1500 - 320) * ((100vw - 320px) / (1920 - 320)));
@@ -17,7 +18,7 @@ export const TextBlock = styled.div`
   text-transform: uppercase;
 `;
 export const NumberBlock = styled.div`
- position: absolute;
+  position: absolute;
   right: 6px;
   top:  calc(570px + (660 - 570) * ((100vw - 780px) / (780 - 320)));
   padding-top: 110px;
@@ -27,44 +28,40 @@ export const NumberBlock = styled.div`
   right: 10px;
   }
   ${mediaBp('desktop')} {
-   position: absolute;
+  position: absolute;
   top: calc(340px + (680 - 340) * ((100vw - 780px) / (1920 - 320)));
   right: 0;
   }
 `;
 export const CenterBlock = styled.div`
+  text-align: start;
+  color: var(--1, #292929);
   margin-bottom: 20px;
-  padding-left: 50px;
+  padding-left: calc(160px + (300 - 160) * ((100vw - 320px) / (768 - 320)));
   ${mediaBp('tablet')} {
-  margin-bottom: 20px;
-  text-align: end;
-  padding-right: calc(40px + (100 - 40) * ((100vw - 768px) / (1280 - 768)));
+  padding-left: 200px;
+  margin-bottom: 25px;
   }
   ${mediaBp('desktop')} {
-    margin-bottom: 0;
-     text-align: end;
-   padding-right: calc(100px + (260 - 100) * ((100vw - 768px) / (1920 - 768)));
-    
+  padding-left: 250px;
+  margin-bottom: 40px;
   }
 `;
-export const NumberTitle = styled.div`
-  color: var(--1, #292929);
+export const NumberTitle = styled(motion.span)`
   font-family: Poppins;
   font-size: calc(60px + (128 - 60) * ((100vw - 320px) / (1920 - 320)));
   font-style: normal;
   font-weight: 900;
   line-height: 120%; /* 72px */
   letter-spacing: -4.2px;
-  margin-left: 100px;
   ${mediaBp('tablet')} {
-  
+  letter-spacing: -6.4px;
   }
   ${mediaBp('desktop')} {
     letter-spacing: -8.96px;
-    margin-left: 0;
   }
 `;
-export const Title = styled.p`
+export const Title = styled.p` 
   color: #292929;
   font-family: Poppins;
   font-size: calc(10px + (18 - 10) * ((100vw - 320px) / (1920 - 320)));
@@ -72,31 +69,16 @@ export const Title = styled.p`
   font-weight: 400;
   line-height: 150%; /* 15px */
   text-transform: uppercase;
-  text-align: start;
   margin-top: -14px;
-  padding-left: 4px;
+  text-align: start;
   ${mediaBp('tablet')} {
+  margin-top: -20px;
   }
   ${mediaBp('desktop')} {
-    text-align: start;
     margin-top: -28px;
-    padding-left: 14px;
   }
 `;
-export const GrayTitle = styled.p`
-  color: #b2b2b2;
-  font-family: Poppins;
-  font-size: calc(60px + (128 - 60) * ((100vw - 320px) / (1920 - 320)));
-  font-style: normal;
-  font-weight: 900;
-  line-height: 120%; /* 72px */
-  letter-spacing: -4.2px;
-  ${mediaBp('tablet')} {
-  }
-  ${mediaBp('desktop')} {
-    letter-spacing: -8.96px;
-  }
-`;
+
 export const Space=styled.span`
 white-space: nowrap;
   ${mediaBp('tablet')} {
@@ -167,16 +149,14 @@ export const StyledSvg =styled.svg`
 
 `
 export const FlexList = styled.ul`
-
+  padding-left: 12px;
   display: flex;
-  justify-content: space-between;
-  ${mediaBp('tablet')} {
-  }
-  ${mediaBp('desktop')} {
-    justify-content: flex-end;
-  }
+  justify-content: space-around;
+
 `;
 export const Li = styled.li`
+  text-align: start;
+  color: #b2b2b2;
   ${mediaBp('tablet')} {
   }
   ${mediaBp('desktop')} {
@@ -193,7 +173,7 @@ export const BlurContent = styled.span`
 `;
 
 export const TitleCenter = styled.p`
-font-size: calc(10px + (18 - 10) * ((100vw - 320px) / (1920 - 320)));
+  font-size: calc(10px + (18 - 10) * ((100vw - 320px) / (1920 - 320)));
   color: #292929;
   font-family: Poppins;
   font-style: normal;
@@ -202,32 +182,39 @@ font-size: calc(10px + (18 - 10) * ((100vw - 320px) / (1920 - 320)));
   text-transform: uppercase;
   text-align: start;
   margin-top: -18px;
-  padding-left: 100px;
+
   ${mediaBp('tablet')} {
-   text-align: end;
-   padding-right: 100px;
+  margin-top: -20px;
   }
   ${mediaBp('desktop')} {
     margin-top: -28px;
-    text-align: end;
-    text-align: end;
-    padding-right: calc(100px + (200 - 100) * ((100vw - 768px) / (1920 - 768)));
   }
 `;
 export const Plus = styled.span`
+  font-family: Poppins;
+  font-size: calc(60px + (128 - 60) * ((100vw - 320px) / (1920 - 320)));
+  font-style: normal;
+  font-weight: 900;
+  line-height: 120%; /* 72px */
+  letter-spacing: -4.2px;
   padding-left: 6px;
   ${mediaBp('tablet')} {
   }
   ${mediaBp('desktop')} {
     padding-left: 15px;
+    letter-spacing: -8.96px;
   }
 `;
+
+
+
 export const NumberContainer =styled.div`
-width: calc(280px + (600 - 280) * ((100vw - 320px) / (768 - 320)));
+  width: 100vw;
   ${mediaBp('tablet')} {
-   width: 500px;
+   width: calc(400px + (800 - 400) * ((100vw - 768px) / (1920 - 768)));
   }
   ${mediaBp('desktop')} {
-   width: calc(500px + (800 - 500) * ((100vw - 768px) / (1920 - 1280)));
+  width: calc(300px + (800 - 300) * ((100vw - 320px) / (1920 - 320)));
   }
+
 `
