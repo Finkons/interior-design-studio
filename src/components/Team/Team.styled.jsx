@@ -7,15 +7,15 @@ const setTopDesktop = props => {
     case 'Sara Thompson':
       return '18%';
     case 'John Doe':
-      return '100%';
+      return '78%';
     case 'Anna Ohara':
       return '16%';
     case 'Michael Johnson':
-      return '104%';
+      return '82%';
     case 'Sofia Shtafan':
       return '20%';
     case 'Jane Smith':
-      return '98%';
+      return '76%';
     default:
       return '';
   }
@@ -26,15 +26,15 @@ const setTopTablet = props => {
     case 'Sara Thompson':
       return '18%';
     case 'John Doe':
-      return '100%';
+      return '80%';
     case 'Anna Ohara':
       return '16%';
     case 'Michael Johnson':
-      return '104%';
+      return '84%';
     case 'Sofia Shtafan':
       return '20%';
     case 'Jane Smith':
-      return '98%';
+      return '78%';
     default:
       return '';
   }
@@ -79,31 +79,35 @@ const setLeftTablet = props => {
 };
 
 export const Container = styled.section`
+  width: 100%;
+  height: 850px;
+  padding: 0px 0px 0px 30px;
   position: relative;
-  padding: 0px 0px 0px 20px;
-
+  // border: solid 1px black;
   ${mediaBp('tablet')} {
-    padding: 180px 0px 0px 40px;
+    padding: 180px 0px 0px 20px;
+    height: 900px;
   }
   ${mediaBp('desktop')} {
-    padding: 229px 0px 0px 40px;
+    padding: 229px 0px 0px 20px;
+    height: 1290px;
   }
 `;
 
-export const Wrap = styled.div`
+export const ImgWrap = styled.div`
   width: 0px;
   height: 0px;
   background-image: url('team/team.png');
   background-size: cover;
   background-repeat: no-repeat;
   ${mediaBp('tablet')} {
-    width: 100%;
+    width: 90%;
     height: 683px;
     margin-left: auto;
     margin-right: 0;
   }
   ${mediaBp('desktop')} {
-    width: 1680px;
+    width: 90%;
     height: 966px;
     margin-left: auto;
     margin-right: 0;
@@ -216,6 +220,7 @@ export const SocialWrap = styled.div`
 `;
 
 export const MobileWrap = styled.div`
+  position: relative;
   display: block;
   padding: 60px 0px;
   ${mediaBp('tablet')} {
@@ -236,18 +241,25 @@ export const TreeImg = styled.img`
 
 export const LineImg = styled.img`
   position: absolute;
-  top: 83%;
+  top: 245%;
   left: 11%;
   z-index: 20;
 `;
 
-export const EmployeeImg = styled.img`
+export const EmployeeImg = styled.div`
   position: absolute;
-  top: 40%;
+  top: 80%;
   left: 15%;
-  z-index: 5;
+  z-index: 25;
+  height: 531px;
 `;
 
+export const ButtonWrap = styled.div`
+  position: absolute;
+  top: 260%;
+  left: 60%;
+  z-index: 40;
+`;
 export const StyledButton = styled.button`
   border: none;
   background-color: transparent;
