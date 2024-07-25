@@ -1,7 +1,9 @@
-import React from "react";
+import React from 'react';
+import { Container } from './Footer.styled';
+import GraySvg from '../Hero/GraySvg';
 
 const Footer = () => {
-  return <div id="contacts">Footer</div>;
+  return <Container id="contacts">{/* <GraySvg /> */}</Container>;
 };
 
 export default Footer;

@@ -2,7 +2,7 @@ import React from 'react';
 import { useState } from 'react';
 import {
   Container,
-  Wrap,
+  ImgWrap,
   TitleContainer,
   InfoWrap,
   Name,
@@ -12,7 +12,9 @@ import {
   MobileWrap,
   TreeImg,
   LineImg,
+  EmployeeImg,
   StyledButton,
+  ButtonWrap,
 } from './Team.styled';
 import { team } from './teamdata';
 
@@ -23,12 +25,18 @@ const variants = {
     transition: { duration: 5 },
   },
 };
+// export async function getStaticProps() {
+//   const res = await fetch('http://localhost:1337/api/home?locale=en');
+//   const data = await res.json();
+//   console.log(data);
+//   return { props: { data } };
+// }
 
-const Team = () => {
+const Team = ({ data }) => {
   const [isHovered, setIsHovered] = useState(false);
   const [buttonId, setButtonId] = useState(0);
-  const [isActive, setIsActive] = useState(false);
-
+  const [isActive, setIsActive] = useState(0);
+  console.log(data);
   return (
     <Container id="team">
       {team.map((employee, index) => {
@@ -73,7 +81,7 @@ const Team = () => {
         );
       })}
 
-      <Wrap></Wrap>
+      <ImgWrap></ImgWrap>
       <MobileWrap>
         <Name>{team[buttonId].name}</Name>
         <InfoWrap>
@@ -88,8 +96,10 @@ const Team = () => {
         </InfoWrap>
         <TreeImg src="team/tree.png" alt="tree" />
         <LineImg src="team/floor.png" alt="floor" />
-        <img src={team[buttonId].photo} alt={team[buttonId].name} />
-        <div>
+        <EmployeeImg>
+          <img src={team[buttonId].photo} alt={team[buttonId].name} />
+        </EmployeeImg>
+        <ButtonWrap>
           {[...Array(6)].map((_, index) => (
             <StyledButton
               type="button"
@@ -102,8 +112,10 @@ const Team = () => {
               {isActive === index ? <img src="team/active.svg" alt="button" /> : <img src="team/button.svg" alt="button" />}
             </StyledButton>
           ))}
-        </div>
+        </ButtonWrap>
       </MobileWrap>
+
+      {/* <h1>{data.attributes.title}</h1> */}
     </Container>
   );
 };
