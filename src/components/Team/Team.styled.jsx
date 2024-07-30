@@ -241,12 +241,12 @@ export const TreeImg = styled.img`
 
 export const LineImg = styled.img`
   position: absolute;
-  top: 245%;
-  left: 11%;
+  top: 238%;
+  left: 15%;
   z-index: 20;
 `;
 
-export const EmployeeImg = styled.div`
+export const EmployeeImg = styled(motion.div)`
   position: absolute;
   top: 80%;
   left: 15%;
@@ -256,8 +256,8 @@ export const EmployeeImg = styled.div`
 
 export const ButtonWrap = styled.div`
   position: absolute;
-  top: 260%;
-  left: 60%;
+  top: 265%;
+  left: 50%;
   z-index: 40;
 `;
 export const StyledButton = styled.button`

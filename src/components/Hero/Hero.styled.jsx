@@ -41,9 +41,9 @@ export const TextBlack = styled(motion.svg)`
 export const TextPink = styled(motion.svg)`
   position: absolute;
   top: 250px;
-  left: 59%;
-  width: 168px;
-  height: 64px;
+  left: 53%;
+  width: 138px;
+  height: 54px;
   ${mediaBp('tablet')} {
     top: 25%;
     left: 75%;
@@ -61,7 +61,7 @@ export const TextPink = styled(motion.svg)`
 export const TextWrap = styled.div`
   position: absolute;
   top: 240px;
-  right: 230px;
+  right: 210px;
   width: 150px;
 
   ${mediaBp('tablet')} {
@@ -97,10 +97,10 @@ export const Text = styled(motion.p)`
 
 export const StyledOval = styled(motion.svg)`
   position: absolute;
-  top: 200px;
-  right: -15%;
-  width: 320px;
-  height: 181px;
+  top: 210px;
+  right: 0%;
+  width: 270px;
+  height: 151px;
 
   ${mediaBp('tablet')} {
     top: 140px;
@@ -118,10 +118,10 @@ export const StyledOval = styled(motion.svg)`
 
 export const StyledLine = styled(motion.svg)`
   position: absolute;
-  width: 345px;
-  height: 116px;
-  top: 370px;
-  right: -50px;
+  width: 305px;
+  height: 86px;
+  top: 360px;
+  right: 10%;
   ${mediaBp('tablet')} {
     top: 330px;
     left: 730px;

@@ -1,5 +1,6 @@
-import React from 'react';
-import { Container, LogoWrap, StyledNav, StyledLink, SocialWrap, SocialLink, BurgerBtn } from './Header.styled';
+import React, { useState } from 'react';
+import { Container, LogoWrap, StyledNav, StyledLink, SocialWrap, SocialLink } from './Header.styled';
+import BurgerBtn from './BurgerBtn/BurgerBtn';
 
 const Header = () => {
   return (
@@ -7,6 +8,9 @@ const Header = () => {
       <LogoWrap>
         <img src="/logo.svg" alt="logo" height="64" width="172" />
       </LogoWrap>
+
+      <BurgerBtn />
+
       <StyledNav>
         <StyledLink href="/#about">About Us</StyledLink>
         <StyledLink href="/#portfolio">Portfolio</StyledLink>
@@ -14,9 +18,7 @@ const Header = () => {
         <StyledLink href="/#team">Our Team</StyledLink>
         <StyledLink href="/#contacts">Contacts</StyledLink>
       </StyledNav>
-      <BurgerBtn>
-        <img src="header/burger.svg" alt="burger menu button" />
-      </BurgerBtn>
+
       <SocialWrap>
         <SocialLink to="https://www.instagram.com/" target="_blank" rel="noopener noreferrer">
           Instagram

@@ -96,7 +96,16 @@ const Team = ({ data }) => {
         </InfoWrap>
         <TreeImg src="team/tree.png" alt="tree" />
         <LineImg src="team/floor.png" alt="floor" />
-        <EmployeeImg>
+        <EmployeeImg
+          initial={{ opacity: 0, x: 50 }}
+          animate={{
+            opacity: 1,
+            x: 0,
+            transition: {
+              duration: 0.5,
+            },
+          }}
+        >
           <img src={team[buttonId].photo} alt={team[buttonId].name} />
         </EmployeeImg>
         <ButtonWrap>
