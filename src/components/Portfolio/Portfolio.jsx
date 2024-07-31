@@ -8,12 +8,17 @@ const Portfolio = () => {
     <SectionConteiner id="portfolio">
       <AncorLink>Portfolio</AncorLink>
       <PhotoItems />
-      {/* <TextWrapper>
+      <TextWrapper>
         <TextContent>
           <Text>
-            Get a<ColoredText> personalized</ColoredText>
+            <i>Get a</i>
+            <i>
+              <ColoredText>personalized</ColoredText>
+            </i>
           </Text>
-          <Text>calculation of</Text>
+          <Text>
+            <i>calculation of</i>
+          </Text>
           <Text>
             <b>
               the cost of <GreyText>your</GreyText>
@@ -25,7 +30,7 @@ const Portfolio = () => {
       <Button>+ sample project design and implementation photos in the messenger</Button>
       <RelativBox>
         <SvgStartLine />
-      </RelativBox> */}
+      </RelativBox>
     </SectionConteiner>
   );
 };
