@@ -79,6 +79,7 @@ const setLeftTablet = props => {
 };
 
 export const Container = styled.section`
+  overflow: hidden;
   width: 100%;
   height: 850px;
   padding: 0px 0px 0px 30px;
@@ -232,6 +233,7 @@ export const MobileWrap = styled.div`
 `;
 
 export const TreeImg = styled.img`
+  overflow: hidden;
   position: absolute;
   left: 60%;
   width: 176px;

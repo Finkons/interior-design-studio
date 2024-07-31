@@ -18,6 +18,7 @@ import mediaBp from '../../styles/breakpoints';
 export const SectionConteiner = styled.section`
   position: relative;
   margin-top: 10vw;
+  overflow: hidden;
 `;
 
 export const ServicesBlock = styled(motion.div)`

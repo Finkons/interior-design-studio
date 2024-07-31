@@ -5,10 +5,13 @@ import { setSizeImage, setPositionTop, setPositionLeft, setPadding, setPaddingBo
 import { motion } from 'framer-motion';
 export const SectionConteiner = styled.section`
   margin: 0 auto;
+  padding: 0 0 30px 0;
+  overflow: hidden;
   ${mediaBp('tablet')} {
+    padding: 0 0 20px 0;
   }
   ${mediaBp('desktop')} {
-    padding: 235px 0 6px 0;
+    padding: 235px 0 40px 0;
   }
 `;
 export const AncorLink = styled.div`
@@ -19,7 +22,7 @@ export const AncorLink = styled.div`
   font-weight: 700;
   line-height: 120%;
   text-transform: uppercase;
-  padding-right: 40px;
+  padding: 10px 10px;
   text-align: right;
   ${mediaBp('tablet')} {
     font-size: 12px;
@@ -195,19 +198,49 @@ export const TextContent = styled.div`
 `;
 
 export const Text = styled.p`
+  padding-left: 4px;
+  font-family: Poppins;
+  letter-spacing: -0.06em;
+  line-height: 100%;
+  font-weight: 900;
+  color: #808080;
+  font-size: 32px;
+  text-transform: uppercase;
+  & > b {
+    font-weight: 900;
+    display: inline-block;
+  }
+  & > i {
+    font-style: normal;
+    text-indent: 50px;
+    display: inline-block;
+  }
   ${mediaBp('tablet')} {
+    font-size: 100px;
+    letter-spacing: 20%;
+    font-size: calc(60px + (100 - 60) * ((100vw - 600px) / (1920 - 600)));
+    & > b {
+      font-weight: 900;
+      display: inline-block;
+      text-indent: 100px;
+    }
+    & > i {
+      font-style: normal;
+      display: inline-block;
+      text-indent: 5px;
+    }
   }
   ${mediaBp('desktop')} {
-    line-height: 100%;
-    font-weight: 900;
-    color: #808080;
-    font-size: 128px;
-    letter-spacing: -6.4px;
-    text-transform: uppercase;
+    font-size: calc(100px + (128 - 100) * ((100vw - 600px) / (1920 - 600)));
     & > b {
-      display: inline-block;
       font-weight: 900;
+      display: inline-block;
       text-indent: 200px;
+    }
+    & > i {
+      font-style: normal;
+      display: inline-block;
+      text-indent: 5px;
     }
   }
 `;
@@ -221,8 +254,6 @@ export const GreyText = styled.span`
 `;
 
 export const TextWrapper = styled.div`
-  ${mediaBp('tablet')} {
-  }
   ${mediaBp('desktop')} {
     display: flex;
     justify-content: center;
@@ -230,21 +261,28 @@ export const TextWrapper = styled.div`
 `;
 
 export const Button = styled.button`
+  width: 150px;
+  height: 54px;
+  color: #292929;
+  font-family: Roboto;
+  font-weight: 700;
+  line-height: 130%; /* 18.2px */
+  text-transform: uppercase;
+  text-align: left;
+  border: none;
+  cursor: pointer;
+  margin: 40px 0 0 16px;
+  font-size: 10px;
   ${mediaBp('tablet')} {
+    width: 242px;
+    height: 54px;
+    font-size: 12px;
+    margin: -30px 40% 0 38%;
   }
   ${mediaBp('desktop')} {
     width: 242px;
     height: 54px;
-    color: #292929;
-    font-family: Roboto;
     font-size: 14px;
-    font-weight: 700;
-    line-height: 130%; /* 18.2px */
-    text-transform: uppercase;
-    text-align: left;
-    border: none;
-    cursor: pointer;
-
     margin: -30px 45% 0 55%;
   }
 `;
@@ -336,28 +374,51 @@ export const RelativBox = styled.div`
   position: relative;
   width: 100%;
 `;
+export const StartLineContainer = styled.div`
+  position: relative;
+  margin-top: -15%;
+  &:before {
+    content: '';
+    display: block;
+    padding-top: 20%; /* initial ratio of 1:1*/
+  }
+`;
 export const StartText = styled(motion.p)`
+  font-size: calc(30px + (160 - 30) * ((100vw - 320px) / (1920 - 320)));
   position: absolute;
-  top: -104px;
-  left: 75%;
-  width: 237px;
   color: #e50185;
   font-family: 'PhontPhreaksHandwriting';
-  font-size: 150px;
+
   font-style: normal;
   font-weight: 400;
   line-height: 100%; /* 150px */
-  letter-spacing: 7.5px;
+  letter-spacing: 6.5px;
   text-transform: uppercase;
+  top: 40%;
+  left: 65%;
+  ${mediaBp('tablet')} {
+    left: 73%;
+  }
+  ${mediaBp('desktop')} {
+    left: 77%;
+  }
 `;
 export const LineBox = styled(motion.svg)`
+  width: 90%;
+  position: absolute;
+  top: 0;
+  left: 12%;
   ${mediaBp('tablet')} {
+    width: 65%;
+    position: absolute;
+    top: 20%;
+    left: 34%;
   }
   ${mediaBp('desktop')} {
     width: 65%;
     position: absolute;
-    top: -210px;
-    left: 38%;
+    top: 20%;
+    left: 37%;
   }
 `;
 
