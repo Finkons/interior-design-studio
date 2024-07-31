@@ -30,7 +30,14 @@ const LinesSvg = () => {
 
   return (
     <>
-      <motion.button type="button" initial="hidden" whileHover="hover" onHoverStart={() => setIsHovered(true)} onHoverEnd={() => setIsHovered(false)}>
+      <motion.button
+        type="button"
+        initial="hidden"
+        whileHover="hover"
+        onHoverStart={() => setIsHovered(true)}
+        onHoverEnd={() => setIsHovered(false)}
+        style={{ background: 'transparent', border: 'none' }}
+      >
         {isHovered === false && (
           <>
             <StyledOval

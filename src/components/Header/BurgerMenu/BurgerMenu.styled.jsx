@@ -6,15 +6,16 @@ import mediaBp from '../../../styles/breakpoints';
 export const Container = styled.div`
   position: fixed;
   top: 0;
-  bottom: 0;
+  bottom: 100%;
   right: 0;
   left: 0;
-  height: 100vh;
+  height: 100%;
   width: 100vw;
-  display: flex;
+
+  display: ${({ open }) => (open ? 'flex' : 'none')};
   flex-direction: column;
   align-items: center;
-  justify-content: center;
+  padding: 120px 0px 0px 0px;
   z-index: 100;
   background: rgba(229, 1, 133, 0.35);
   -webkit-backdrop-filter: blur(12px);
@@ -37,7 +38,7 @@ export const StyledLink = styled.a`
   color: #fff;
   cursor: pointer;
   font-family: "Poppins";
-  font-size: 16px;
+  font-size: 20px;
   font-style: normal;
   font-weight: 700;
   line-height: 150%; /* 30px */
@@ -61,7 +62,7 @@ export const SocialLink = styled(Link)`
   color: #292929;
   font-family: Poppins;
   cursor: pointer;
-  font-size: 16px;
+  font-size: 20px;
   font-style: normal;
   font-weight: 700;
   line-height: 150%; /* 30px */

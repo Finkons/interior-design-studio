@@ -6,7 +6,7 @@ export const StyledBtn = styled.div`
   height: 2.5rem;
   position: fixed;
   top: 20px;
-  right: 30%;
+  right: 35%;
   display: flex;
   justify-content: space-around;
   flex-flow: column nowrap;

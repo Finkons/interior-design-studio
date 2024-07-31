@@ -1,4 +1,4 @@
-import React, { useState } from 'react';
+import React from 'react';
 import { Container, LogoWrap, StyledNav, StyledLink, SocialWrap, SocialLink } from './Header.styled';
 import BurgerBtn from './BurgerBtn/BurgerBtn';
 

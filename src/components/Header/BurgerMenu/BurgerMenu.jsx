@@ -1,7 +1,15 @@
-import React from 'react';
+import React, { useEffect } from 'react';
 import { Container, StyledNav, StyledLink, SocialWrap, SocialLink } from './BurgerMenu.styled';
 
 const BurgerMenu = ({ open, closeMenu }) => {
+  useEffect(() => {
+    if (open) {
+      document.body.style.overflow = 'hidden';
+    } else {
+      document.body.style.overflow = 'auto';
+    }
+  }, [open]);
+
   return (
     <Container open={open}>
       <StyledNav>

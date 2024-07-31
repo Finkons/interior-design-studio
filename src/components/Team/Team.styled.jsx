@@ -81,7 +81,7 @@ const setLeftTablet = props => {
 export const Container = styled.section`
   width: 100%;
   height: 850px;
-  padding: 0px 0px 0px 30px;
+  padding: 0px 0px 0px 20px;
   position: relative;
   // border: solid 1px black;
   ${mediaBp('tablet')} {
@@ -222,7 +222,7 @@ export const SocialWrap = styled.div`
 export const MobileWrap = styled.div`
   position: relative;
   display: block;
-  padding: 60px 0px;
+  padding: 20px 0px;
   ${mediaBp('tablet')} {
     display: none;
   }
@@ -233,22 +233,23 @@ export const MobileWrap = styled.div`
 
 export const TreeImg = styled.img`
   position: absolute;
-  left: 60%;
-  width: 176px;
-  height: 555px;
-  z-index: 10;
+  top: 60%;
+  left: 55%;
+  width: 156px;
+  height: 535px;
+  z-index: 20;
 `;
 
 export const LineImg = styled.img`
   position: absolute;
-  top: 238%;
-  left: 15%;
-  z-index: 20;
+  top: 268%;
+  left: 6%;
+  z-index: 10;
 `;
 
 export const EmployeeImg = styled(motion.div)`
   position: absolute;
-  top: 80%;
+  top: 60%;
   left: 15%;
   z-index: 25;
   height: 531px;
@@ -256,7 +257,7 @@ export const EmployeeImg = styled(motion.div)`
 
 export const ButtonWrap = styled.div`
   position: absolute;
-  top: 265%;
+  top: 305%;
   left: 50%;
   z-index: 40;
 `;
