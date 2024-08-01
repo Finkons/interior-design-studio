@@ -11,7 +11,7 @@ import {
   SocialWrap,
   MobileWrap,
   TreeImg,
-  LineImg,
+  EmployeeImgWrap,
   EmployeeImg,
   StyledButton,
   ButtonWrap,
@@ -25,6 +25,22 @@ const variants = {
     transition: { duration: 5 },
   },
 };
+
+const imageVariants = {
+  offscreen: {
+    x: 100,
+    opacity: 0,
+  },
+  onscreen: {
+    x: 0,
+    opacity: 1,
+    transition: {
+      type: 'linear',
+      duration: 1,
+    },
+  },
+};
+
 // export async function getStaticProps() {
 //   const res = await fetch('http://localhost:1337/api/home?locale=en');
 //   const data = await res.json();
@@ -95,19 +111,16 @@ const Team = ({ data }) => {
           </SocialWrap>
         </InfoWrap>
         <TreeImg src="team/tree.png" alt="tree" />
-        <LineImg src="team/floor.png" alt="floor" />
-        <EmployeeImg
-          initial={{ opacity: 0, x: 50 }}
-          animate={{
-            opacity: 1,
-            x: 0,
-            transition: {
-              duration: 0.5,
-            },
-          }}
-        >
-          <img src={team[buttonId].photo} alt={team[buttonId].name} />
-        </EmployeeImg>
+        <EmployeeImgWrap>
+          <EmployeeImg
+            src={team[buttonId].photo}
+            alt={team[buttonId].name}
+            key={buttonId}
+            variants={imageVariants}
+            initial="offscreen"
+            animate="onscreen"
+          />
+        </EmployeeImgWrap>
         <ButtonWrap>
           {[...Array(6)].map((_, index) => (
             <StyledButton
@@ -123,8 +136,6 @@ const Team = ({ data }) => {
           ))}
         </ButtonWrap>
       </MobileWrap>
-
-      {/* <h1>{data.attributes.title}</h1> */}
     </Container>
   );
 };

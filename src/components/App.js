@@ -19,11 +19,25 @@ function App() {
       speed: 1000,
       speedAsDuration: true,
     });
+      
+       const handleLoad = () => {
+      document.body.style.backdropFilter = 'none';
+    };
+
+    window.addEventListener('load', handleLoad);
+
+    return () => {
+      window.removeEventListener('load', handleLoad);
+    };
+      
   }, []);
 
   const handleLoadingComplete = () => {
     setLoading(false);
+    
   };
+
+
 
   return (
     <>

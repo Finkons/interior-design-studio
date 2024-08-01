@@ -236,26 +236,21 @@ export const TreeImg = styled.img`
   overflow: hidden;
   position: absolute;
   top: 60%;
-  left: 55%;
-  width: 156px;
-  height: 535px;
+  right: 5%;
+  width: 480px;
+  height: 555px;
   z-index: 20;
 `;
 
-export const LineImg = styled.img`
-  position: absolute;
-  top: 268%;
-  left: 6%;
-  z-index: 10;
-`;
-
-export const EmployeeImg = styled(motion.div)`
+export const EmployeeImgWrap = styled(motion.div)`
   position: absolute;
   top: 60%;
   left: 15%;
   z-index: 25;
   height: 531px;
 `;
+
+export const EmployeeImg = styled(motion.img)``;
 
 export const ButtonWrap = styled.div`
   position: absolute;

@@ -7,11 +7,13 @@ export const GlobalStyle = createGlobalStyle`
     src: url('/fonts/PhontPhreaks Handwriting.ttf') format('truetype');
 }
 body {
-overflow-x:hidden;
- margin: 0 auto;
-    transition: all 0.5s ease;
-    background-color: rgba(240, 240, 240, 1); 
-    background-image: url('BG.png');
+    overflow-x: hidden !important;
+    margin: 0 auto;
+     background-image: url('BG.png');
+    // backdrop-filter: contrast(0%) brightness(2);
+     backdrop-filter: blur(12px);
+    transition: backdrop-filter 5s ease, background 13s ease;
+    background-color: rgba(240, 240, 240, 1);
     background-size: cover;
     background-repeat: no-repeat;
     line-height: 100%;
