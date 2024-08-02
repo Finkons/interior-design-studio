@@ -23,7 +23,7 @@ export const Path = styled(motion.path)`
     fill: ${props => (props.mobile ? 'transparent' : '#505050')};
   }
 `;
-export const StyledSvg = styled.svg`
+export const StyledSvg = styled(motion.svg)`
   position: absolute;
   display: ${props => (props.mobile ? 'block' : 'none')};
   top: 10%;

@@ -4,7 +4,7 @@ import { motion } from 'framer-motion';
 const svgVariants = {
   default: {
     opacity: 0,
-    scale: 0.9,
+    scale: 0.8,
   },
   visible: {
     opacity: 1,
@@ -18,17 +18,17 @@ const svgVariants = {
 const FooterGraySvg = () => {
   return (
     <>
-      <StyledSvg viewBox="0 0 1816 700" preserveAspectRatio="xMidYMid meet" tablet>
-        <motion.svg
-          xmlns="http://www.w3.org/2000/svg"
-          fill="none"
-          mix-blend-mode="color-burn"
-          whileInView="visible"
-          viewport={{ once: true }}
-          initial="default"
-          animate="default"
-          variants={svgVariants}
-        >
+      <StyledSvg
+        viewBox="0 0 1816 700"
+        preserveAspectRatio="xMidYMid meet"
+        whileInView="visible"
+        viewport={{ once: true }}
+        initial="default"
+        animate="default"
+        variants={svgVariants}
+        tablet
+      >
+        <motion.svg xmlns="http://www.w3.org/2000/svg" fill="none" mix-blend-mode="color-burn">
           <g filter="url(#a)" opacity="0.3">
             <Path
               fill="#505050"
@@ -45,17 +45,17 @@ const FooterGraySvg = () => {
           </defs>
         </motion.svg>
       </StyledSvg>
-      <StyledSvg viewBox="0 0 600 390" preserveAspectRatio="xMidYMid slice" mobile>
-        <motion.svg
-          xmlns="http://www.w3.org/2000/svg"
-          fill="none"
-          mix-blend-mode="color-burn"
-          whileInView="visible"
-          viewport={{ once: true }}
-          initial="default"
-          animate="default"
-          variants={svgVariants}
-        >
+      <StyledSvg
+        viewBox="0 0 600 390"
+        preserveAspectRatio="xMidYMid slice"
+        whileInView="visible"
+        viewport={{ once: true }}
+        initial="default"
+        animate="default"
+        variants={svgVariants}
+        mobile
+      >
+        <motion.svg xmlns="http://www.w3.org/2000/svg" fill="none" mix-blend-mode="color-burn">
           <g filter="url(#a)" opacity="0.3">
             <Path
               variants={svgVariants}
