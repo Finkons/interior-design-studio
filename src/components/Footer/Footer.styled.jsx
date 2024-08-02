@@ -42,3 +42,23 @@ export const StyledSvg = styled(motion.svg)`
     width: calc(1150px + (1800 - 1150) * ((100vw - 1100px) / (1920 - 1100)));
   }
 `;
+export const TextBlack = styled(motion.svg)`
+  position: absolute;
+  display: ${props => (props.mobile ? 'block' : 'none')};
+  top: 36%;
+  left: 12%;
+  width: 250px;
+
+  ${mediaBp('tablet')} {
+    display: ${props => (props.tablet ? 'block' : 'none')};
+    top: 42%;
+    left: 19%;
+    width: 600px;
+  }
+  ${mediaBp('desktop')} {
+    display: ${props => (props.tablet ? 'block' : 'none')};
+    top: 42%;
+    left: 19%;
+    width: 1000px;
+  }
+`;
