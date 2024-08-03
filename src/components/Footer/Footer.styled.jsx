@@ -4,12 +4,12 @@ import mediaBp from './../../styles/breakpoints';
 
 export const Container = styled.section`
   position: relative;
-  height: 501px;
+  height: 601px;
   ${mediaBp('tablet')} {
     height: 801px;
   }
   ${mediaBp('desktop')} {
-    padding: 0px 50px 300px 0px;
+    padding: 0px 50px 200px 0px;
     height: 931px;
   }
 `;
@@ -45,13 +45,13 @@ export const StyledSvg = styled(motion.svg)`
 export const TextBlack = styled(motion.svg)`
   position: absolute;
   display: ${props => (props.mobile ? 'block' : 'none')};
-  top: 28%;
+  top: 22%;
   left: 12%;
   width: 250px;
 
   ${mediaBp('tablet')} {
     display: ${props => (props.tablet ? 'block' : 'none')};
-    top: 42%;
+    top: 40%;
     left: 15%;
     width: 400px;
   }
@@ -84,8 +84,8 @@ export const StartText = styled(motion.p)`
   line-height: 100%; /* 150px */
   letter-spacing: 6.5px;
   text-transform: uppercase;
-  top: calc(350px + (600 - 350) * ((100vw - 320px) / (1920 - 320)));
-  left: 52%;
+  top: calc(320px + (700 - 320) * ((100vw - 320px) / (1920 - 320)));
+  left: 42%;
 
   ${mediaBp('tablet')} {
     left: 67%;
@@ -98,12 +98,12 @@ export const StartText = styled(motion.p)`
 `;
 export const LineBox = styled(motion.svg)`
   overflow: hidden;
-  width: 100%;
+  width: calc(380px + (600 - 380) * ((100vw - 320px) / (780 - 320)));
   position: absolute;
-  top: 210px;
-  left: 28%;
+  top: calc(150px + (180 - 150) * ((100vw - 320px) / (768 - 320)));
+  left: calc(30px + (180 - 30) * ((100vw - 320px) / (768 - 320)));
   ${mediaBp('tablet')} {
-    width: 50%;
+    width: 58%;
     top: 230px;
     left: 56%;
   }
@@ -111,5 +111,60 @@ export const LineBox = styled(motion.svg)`
     width: 50%;
     top: 320px;
     left: 63%;
+  }
+`;
+// contacts block
+
+export const ContactContainer = styled.ul`
+  display: flex;
+  flex-direction: column;
+  gap: 14px;
+  position: absolute;
+  align-items: flex-start;
+  padding: 0px 0px 20px 10px;
+  bottom: 0%;
+  ${mediaBp('desktop')} {
+    padding: 0 0px 80px 40px;
+    bottom: 2%;
+  }
+`;
+export const ContactItem = styled.li`
+  gap: 6px;
+  ${mediaBp('desktop')} {
+    gap: 8px;
+  }
+`;
+export const ContactTitle = styled.p`
+  color: #fff;
+
+  font-family: Poppins;
+  font-size: 12px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: 140%; /* 28px */
+  padding-bottom: 6px;
+  ${mediaBp('tablet')} {
+    font-size: 20px;
+  }
+  ${mediaBp('desktop')} {
+    font-size: 20px;
+    padding-bottom: 8px;
+  }
+`;
+export const ContactLink = styled.a`
+  color: #fff;
+  padding-bottom: 4px;
+  font-family: Poppins;
+  font-size: 14px;
+  font-style: normal;
+  font-weight: 900;
+  line-height: 150%; /* 24px */
+  text-transform: uppercase;
+  ${mediaBp('desktop')} {
+    font-size: 16px;
+    padding-bottom: 8px;
+  }
+  & > span {
+    text-decoration: underline;
   }
 `;
