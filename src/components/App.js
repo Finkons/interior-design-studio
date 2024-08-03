@@ -19,8 +19,8 @@ function App() {
       speed: 1000,
       speedAsDuration: true,
     });
-      
-       const handleLoad = () => {
+
+    const handleLoad = () => {
       document.body.style.backdropFilter = 'none';
     };
 
@@ -29,15 +29,11 @@ function App() {
     return () => {
       window.removeEventListener('load', handleLoad);
     };
-      
   }, []);
 
   const handleLoadingComplete = () => {
     setLoading(false);
-    
   };
-
-
 
   return (
     <>
@@ -53,6 +49,7 @@ function App() {
           <Services />
           <Team />
           <Footer />
+          <Header />
         </Suspense>
       )}
     </>
