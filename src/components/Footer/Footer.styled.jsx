@@ -4,6 +4,7 @@ import mediaBp from './../../styles/breakpoints';
 
 export const Container = styled.section`
   position: relative;
+  overflow: hidden;
   height: 601px;
   ${mediaBp('tablet')} {
     height: 801px;
@@ -97,7 +98,6 @@ export const StartText = styled(motion.p)`
   }
 `;
 export const LineBox = styled(motion.svg)`
-  overflow: hidden;
   width: calc(380px + (600 - 380) * ((100vw - 320px) / (780 - 320)));
   position: absolute;
   top: calc(150px + (180 - 150) * ((100vw - 320px) / (768 - 320)));
