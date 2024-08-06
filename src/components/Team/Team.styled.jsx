@@ -102,13 +102,14 @@ export const ImgWrap = styled.div`
   background-size: cover;
   background-repeat: no-repeat;
   ${mediaBp('tablet')} {
-    width: 90%;
+    width: 100vw;
     height: 683px;
     margin-left: auto;
     margin-right: 0;
   }
   ${mediaBp('desktop')} {
-    width: 90%;
+    // width: 90%;
+    width: 90vw;
     height: 966px;
     margin-left: auto;
     margin-right: 0;

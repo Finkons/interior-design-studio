@@ -45,14 +45,14 @@ export const TextPink = styled(motion.svg)`
   width: 138px;
   height: 54px;
   ${mediaBp('tablet')} {
-    top: 25%;
-    left: 75%;
+    top: 26%;
+    left: 730px;
     width: 220px;
     height: 85px;
   }
   ${mediaBp('desktop')} {
     top: 400px;
-    left: 1470px;
+    left: 1340px;
     width: 394px;
     height: 150px;
   }
@@ -66,12 +66,12 @@ export const TextWrap = styled.div`
 
   ${mediaBp('tablet')} {
     top: 340px;
-    right: 300px;
+    right: 50%;
     width: 200px;
   }
   ${mediaBp('desktop')} {
     top: 650px;
-    left: 10px;
+    left: -25px;
     width: 237px;
   }
 `;
@@ -97,40 +97,40 @@ export const Text = styled(motion.p)`
 
 export const StyledOval = styled(motion.svg)`
   position: absolute;
-  top: 210px;
-  right: 0%;
-  width: 270px;
-  height: 151px;
+  top: 130px;
+  right: -17%;
+  width: 340px;
+  height: 221px;
 
   ${mediaBp('tablet')} {
-    top: 140px;
-    right: 2%;
-    width: 350px;
-    height: 245px;
+    top: 10px;
+    left: 600px;
+    width: 460px;
+    height: 355px;
   }
   ${mediaBp('desktop')} {
-    top: 230px;
-    left: 1350px;
-    width: 560px;
-    height: 490px;
+    top: -5%;
+    left: 1100px;
+    width: 890px;
+    height: 820px;
   }
 `;
 
 export const StyledLine = styled(motion.svg)`
   position: absolute;
-  width: 305px;
+  width: 195px;
   height: 86px;
-  top: 360px;
+  top: 340px;
   right: 10%;
   ${mediaBp('tablet')} {
-    top: 330px;
-    left: 730px;
-    width: 350px;
-    height: 245px;
+    top: 310px;
+    left: 600px;
+    width: 330px;
+    height: 225px;
   }
   ${mediaBp('desktop')} {
     top: 690px;
-    left: 1330px;
+    left: 1230px;
     width: 501px;
     height: 189px;
   }
