@@ -17,9 +17,9 @@ const Hero = () => {
   return (
     <Container>
       <GraySvg />
+      <LinesSvg />
       <BlackTextSvg />
       <PinkTextSvg />
-      <LinesSvg />
 
       <TextWrap>
         <Text
