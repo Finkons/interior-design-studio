@@ -82,14 +82,14 @@ export const Container = styled.section`
   overflow: hidden;
   width: 100%;
   height: 850px;
-  padding: 0px 0px 0px 20px;
+  padding: 0px 0px 0px 0px;
   position: relative;
   ${mediaBp('tablet')} {
-    padding: 180px 0px 0px 20px;
+    padding: 180px 0px 0px 0px;
     height: 900px;
   }
   ${mediaBp('desktop')} {
-    padding: 229px 0px 0px 20px;
+    padding: 229px 0px 0px 0px;
     height: 1290px;
   }
 `;
@@ -258,16 +258,6 @@ export const TreeImg = styled.img`
   width: 100%;
   height: 100%;
 `;
-
-// export const TreeImg = styled.img`
-//   overflow: hidden;
-//   position: absolute;
-//   top: 60%;
-//   right: 5%;
-//   width: 480px;
-//   height: 555px;
-//   z-index: 20;
-// `;
 
 export const EmployeeImgWrap = styled(motion.div)`
   position: absolute;

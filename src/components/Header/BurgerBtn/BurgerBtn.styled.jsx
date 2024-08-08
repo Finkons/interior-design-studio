@@ -10,7 +10,7 @@ export const StyledBtn = styled.div`
   display: flex;
   justify-content: space-around;
   flex-flow: column nowrap;
-  z-index: 105;
+  z-index: 205;
 
   ${mediaBp('tablet')} {
     display: none;
