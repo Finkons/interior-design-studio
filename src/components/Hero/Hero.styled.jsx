@@ -148,8 +148,8 @@ export const TextWrap = styled.div`
     width: 200px;
   }
   ${mediaBp('desktop')} {
-    top: 650px;
-    left: -25px;
+    top: 68%;
+    right: 40%;
     width: 237px;
   }
 `;
