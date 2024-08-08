@@ -3,6 +3,7 @@ import { useState } from 'react';
 import {
   Container,
   ImgWrap,
+  TeamImg,
   TitleContainer,
   InfoWrap,
   Name,
@@ -10,6 +11,7 @@ import {
   Description,
   SocialWrap,
   MobileWrap,
+  TreeImgWrap,
   TreeImg,
   EmployeeImgWrap,
   EmployeeImg,
@@ -97,7 +99,10 @@ const Team = ({ data }) => {
         );
       })}
 
-      <ImgWrap></ImgWrap>
+      <ImgWrap>
+        <TeamImg src="team/team.png" alt="Linkedln icon" />
+      </ImgWrap>
+
       <MobileWrap>
         <Name>{team[buttonId].name}</Name>
         <InfoWrap>
@@ -110,7 +115,10 @@ const Team = ({ data }) => {
             <img src="team/X.svg" alt="Linkedln icon" />
           </SocialWrap>
         </InfoWrap>
-        <TreeImg src="team/tree.png" alt="tree" />
+        <TreeImgWrap>
+          <TreeImg src="team/tree.png" alt="tree" />
+        </TreeImgWrap>
+
         <EmployeeImgWrap>
           <EmployeeImg
             src={team[buttonId].photo}

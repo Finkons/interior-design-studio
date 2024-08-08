@@ -76,10 +76,10 @@ export const StyledLink = styled.a`
     color: #E50185;
   }
   ${mediaBp('tablet')} {
-    font-size: 14px;
+    font-size: 0.73vw;
   }
   ${mediaBp('desktop')} {
-    font-size: 20px;
+    font-size: 1vw;
   }
   }
 `;
@@ -111,10 +111,10 @@ export const SocialLink = styled(Link)`
   line-height: 150%; /* 30px */
   text-transform: uppercase;
   ${mediaBp('tablet')} {
-    font-size: 14px;
+    font-size: 0.73vw;
   }
   ${mediaBp('desktop')} {
-    font-size: 20px;
+    font-size: 1vw;
   }
 `;
 

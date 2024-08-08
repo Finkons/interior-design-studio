@@ -2,6 +2,7 @@ import React from 'react';
 import { motion } from 'framer-motion';
 import { StyledOval, StyledLine } from './Hero.styled';
 import { useState } from 'react';
+import PinkTextSvg from './PinkTextSvg';
 
 const drawLines = {
   hidden: { strokeWidth: 0, pathLength: 0, transition: { duration: 0.1, ease: 'easeOut' } },
@@ -18,7 +19,7 @@ const drawLines = {
     };
   },
   hover: {
-    strokeWidth: 1.5,
+    strokeWidth: 3,
     pathLength: 1,
     stroke: '#292929',
     transition: { duration: 3, ease: 'easeOut' },
@@ -72,6 +73,8 @@ const LinesSvg = () => {
           />
         </StyledOval>
       </motion.button>
+
+      <PinkTextSvg />
 
       <StyledLine width="465" height="190" viewBox="0 0 465 190" fill="none" xmlns="http://www.w3.org/2000/svg" initial="hidden" animate="visible">
         <g>
