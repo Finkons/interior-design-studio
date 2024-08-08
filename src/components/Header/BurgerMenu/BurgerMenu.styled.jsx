@@ -18,7 +18,7 @@ export const Container = styled.div`
   padding: 120px 0px 0px 0px;
   z-index: 100;
   background: rgba(229, 1, 133, 0.35);
-  -webkit-backdrop-filter: blur(12px);
+  -webkit-backdrop-filter: blur(32px);
   backdrop-filter: blur(12px);
   transform: ${({ open }) => (open ? 'translateX(0)' : 'translateX(100%)')};
   transition: transform 0.3s ease-in-out;

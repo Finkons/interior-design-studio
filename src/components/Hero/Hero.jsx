@@ -5,14 +5,6 @@ import BlackTextSvg from './BlackTextSvg';
 import PinkTextSvg from './PinkTextSvg';
 import LinesSvg from './LinesSvg';
 
-// const svgVariants = {
-//   hidden: { rotate: -180 },
-//   visible: {
-//     rotate: 0,
-//     transition: { duration: 5 },
-//   },
-// };
-
 const Hero = () => {
   return (
     <Container>

@@ -84,7 +84,6 @@ export const Container = styled.section`
   height: 850px;
   padding: 0px 0px 0px 20px;
   position: relative;
-  // border: solid 1px black;
   ${mediaBp('tablet')} {
     padding: 180px 0px 0px 20px;
     height: 900px;
@@ -98,21 +97,31 @@ export const Container = styled.section`
 export const ImgWrap = styled.div`
   width: 0px;
   height: 0px;
-  background-image: url('team/team.png');
-  background-size: cover;
-  background-repeat: no-repeat;
+
   ${mediaBp('tablet')} {
-    width: 100vw;
-    height: 683px;
+    width: 87.5vw;
+    height: auto;
     margin-left: auto;
     margin-right: 0;
   }
   ${mediaBp('desktop')} {
-    // width: 90%;
-    width: 90vw;
-    height: 966px;
+    width: 87.5vw;
+    height: auto;
     margin-left: auto;
     margin-right: 0;
+  }
+`;
+
+export const TeamImg = styled.img`
+  width: 0px;
+  height: 0px;
+  ${mediaBp('tablet')} {
+    width: 100%;
+    height: auto;
+  }
+  ${mediaBp('desktop')} {
+    width: 100%;
+    height: auto;
   }
 `;
 
@@ -233,15 +242,32 @@ export const MobileWrap = styled.div`
   }
 `;
 
-export const TreeImg = styled.img`
-  overflow: hidden;
+export const TreeImgWrap = styled.div`
+  width: 480px;
+  height: 555px;
+  // overflow: hidden;
   position: absolute;
   top: 60%;
   right: 5%;
-  width: 480px;
-  height: 555px;
   z-index: 20;
+  margin-left: auto;
+  margin-right: 0;
 `;
+
+export const TreeImg = styled.img`
+  width: 100%;
+  height: 100%;
+`;
+
+// export const TreeImg = styled.img`
+//   overflow: hidden;
+//   position: absolute;
+//   top: 60%;
+//   right: 5%;
+//   width: 480px;
+//   height: 555px;
+//   z-index: 20;
+// `;
 
 export const EmployeeImgWrap = styled(motion.div)`
   position: absolute;
