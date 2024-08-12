@@ -64,7 +64,7 @@ export const TextPink = styled(motion.svg)`
 
 export const StyledOval = styled(motion.svg)`
   position: absolute;
-  top: 130px;
+  top: 140px;
   right: -17%;
   width: 340px;
   height: 221px;

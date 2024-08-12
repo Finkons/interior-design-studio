@@ -12,6 +12,7 @@ body {
      background-image: url('BG.png');
     // backdrop-filter: contrast(0%) brightness(2);
      backdrop-filter: blur(12px);
+     -webkit-backdrop-filter: blur(12px);
     transition: backdrop-filter 5s ease, background 13s ease;
     background-color: rgba(240, 240, 240, 1);
     background-size: cover;
