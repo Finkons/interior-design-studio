@@ -91,7 +91,7 @@ export const StyledLine = styled(motion.svg)`
   position: absolute;
   width: 195px;
   height: 86px;
-  top: 340px;
+  top: 349px;
   right: 10%;
   ${mediaBp('tablet')} {
     top: 310px;

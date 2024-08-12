@@ -1,7 +1,8 @@
 import styled from 'styled-components';
 import { Link } from 'react-router-dom';
+import { motion } from 'framer-motion';
 
-export const Container = styled.div`
+export const Container = styled(motion.div)`
   position: fixed;
   top: 0;
   bottom: 100%;
@@ -15,9 +16,11 @@ export const Container = styled.div`
   align-items: center;
   padding: 120px 0px 0px 0px;
   z-index: 100;
-  background: rgba(229, 1, 133, 0.35);
-  -webkit-backdrop-filter: blur(32px);
-  backdrop-filter: blur(32px);
+  // -webkit-backdrop-filter: blur(32px);
+  // backdrop-filter: blur(32px);
+  background-image: url('BG.png');
+  background-size: auto;
+  background-repeat: no-repeat;
   transform: ${({ open }) => (open ? 'translateX(0)' : 'translateX(100%)')};
   transition: transform 0.3s ease-in-out;
 `;
