@@ -48,7 +48,6 @@ export const StyledBtn = styled.div`
   position: fixed;
   top: 20px;
   right: 15%;
-  // border: 1px solid black;
   display: flex;
   cursor: pointer;
   z-index: 205;
@@ -78,6 +77,7 @@ export const Burger = styled.div`
 
 export const CrossBtn = styled.div`
   display: flex;
+
   justify-content: space-around;
   flex-flow: column nowrap;
 

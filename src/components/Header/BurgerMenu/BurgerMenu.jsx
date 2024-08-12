@@ -1,6 +1,21 @@
 import React, { useEffect } from 'react';
 import { Container, StyledNav, StyledLink, SocialWrap, SocialLink } from './BurgerMenu.styled';
 
+const variants = {
+  offscreen: {
+    x: 100,
+    opacity: 0,
+  },
+  onscreen: {
+    x: 0,
+    opacity: 1,
+    transition: {
+      type: 'linear',
+      duration: 0.5,
+    },
+  },
+};
+
 const BurgerMenu = ({ open, closeMenu }) => {
   useEffect(() => {
     if (open) {
@@ -11,7 +26,7 @@ const BurgerMenu = ({ open, closeMenu }) => {
   }, [open]);
 
   return (
-    <Container open={open}>
+    <Container variants={variants} initial="offscreen" animate="onscreen" open={open}>
       <StyledNav>
         <StyledLink href="/#about" onClick={closeMenu}>
           About Us

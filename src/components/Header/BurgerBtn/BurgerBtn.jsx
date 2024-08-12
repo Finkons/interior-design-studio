@@ -5,7 +5,6 @@ import { StyledBtn, CrossBtn, Burger } from './BurgerBtn.styled';
 
 const BurgerBtn = () => {
   const [open, setOpen] = useState(false);
-  console.log(open);
 
   const closeMenu = () => {
     setOpen(false);
@@ -14,7 +13,7 @@ const BurgerBtn = () => {
   return (
     <>
       <StyledBtn onClick={() => setOpen(!open)}>
-        {open ? (
+        {open === 'true' ? (
           <CrossBtn>
             <div></div>
             <div></div>
